@@ -7,13 +7,16 @@
   <meta name="description" content="NSEE projects: space simulators for ESA, AI applied to health, astrophysics research, and GMT software systems." />
   <link rel="icon" type="image/svg+xml" href="assets/nsee_azul.svg" />
   <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('nsee-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'));</script>
 </head>
 <body>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar">
     <a href="index.html" class="nav-logo">
-      <img src="assets/nsee_branco.svg" alt="NSEE Logo" />
+      <img src="assets/nsee_branco.svg" alt="NSEE" />
+      <span class="nav-logo-sep" aria-hidden="true"></span>
+      <img src="assets/maua_branco.svg" alt="Mauá" class="nav-logo-maua" />
     </a>
 
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -21,14 +24,17 @@
     </button>
 
     <ul class="nav-links" id="navLinks">
-      <li><a href="index.html"    data-i18n="nav.home">Home</a></li>
-      <li><a href="about.html"   data-i18n="nav.about">About</a></li>
-      <li><a href="team.html"    data-i18n="nav.team">Team</a></li>
+      <li><a href="index.html"     data-i18n="nav.home">Home</a></li>
+      <li><a href="about.html"    data-i18n="nav.about">About</a></li>
+      <li><a href="team.html"     data-i18n="nav.team">Team</a></li>
       <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
-      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      <li><a href="contact.html"  data-i18n="nav.contact">Contact</a></li>
     </ul>
 
-    <button class="lang-toggle" id="langToggle" aria-label="Switch language">PT</button>
+    <div class="nav-controls">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">PT</button>
+    </div>
   </nav>
 
   <!-- ===== CONTENT ===== -->

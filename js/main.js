@@ -1,6 +1,6 @@
 /* =============================================
    NSEE Portfolio — Main JS
-   Handles: navbar toggle, active link, smooth scroll
+   Handles: navbar toggle, active link, scroll-reveal, theme toggle
    ============================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -35,6 +35,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  /* ---- Theme toggle ---- */
+  const themeToggle = document.getElementById('themeToggle');
+  const root = document.documentElement;
+
+  function getTheme() {
+    return localStorage.getItem('nsee-theme') ||
+      (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  }
+
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    localStorage.setItem('nsee-theme', theme);
+    if (themeToggle) {
+      themeToggle.textContent = theme === 'dark' ? '🌙' : '☀️';
+      themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+    }
+  }
+
+  /* Apply saved / system theme immediately (no flash) */
+  applyTheme(getTheme());
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      applyTheme(next);
+    });
+  }
+
   /* ---- Scroll-reveal animation ---- */
   const revealEls = document.querySelectorAll(
     '.pillar-card, .member-card, .project-card, .social-item, .about-grid, .about-logos'
@@ -64,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (navbar) {
     window.addEventListener('scroll', () => {
       navbar.style.boxShadow = window.scrollY > 10
-        ? '0 4px 24px rgba(0,0,0,0.5)'
+        ? '0 4px 24px rgba(0,0,0,0.4)'
         : 'none';
     }, { passive: true });
   }

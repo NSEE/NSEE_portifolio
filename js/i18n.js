@@ -145,7 +145,7 @@ const translations = {
     "nav.contact":  "Contato",
 
     /* ---- Index ---- */
-    "hero.tagline":  "Desenvolvimento de Sistemas Eletrônicos Embarcados no Instituto Mauá de Tecnologia",
+    "hero.tagline":  "Núcleo de Sistemas Eletrônicos Embarcados no Instituto Mauá de Tecnologia",
     "hero.desc":     "Desenvolvemos soluções tecnológicas com foco em rigor técnico e aplicação direta em problemas reais da indústria, da ciência e do setor espacial.",
     "hero.cta1":     "Conheça o NSEE",
     "hero.cta2":     "Ver Portfólio",

@@ -10,21 +10,41 @@
   padding: 0;
 }
 
+/* ---- Dark theme (default) ---- */
 :root {
-  --nsee-blue:    #0047AB;
-  --nsee-blue-lt: #1A6DD4;
-  --maua-blue:    #003087;
-  --bg-dark:      #06060F;
-  --bg-card:      #0E0E1E;
-  --bg-card-hover:#141428;
-  --text-primary: #F0F4FF;
-  --text-muted:   #8A9BC2;
-  --border:       rgba(0, 71, 171, 0.35);
-  --accent:       #4A9EFF;
-  --font-base:    'Segoe UI', system-ui, -apple-system, sans-serif;
-  --radius:       10px;
-  --transition:   0.25s ease;
-  --nav-h:        70px;
+  --nsee-blue:      #0047AB;
+  --nsee-blue-lt:   #1A6DD4;
+  --maua-blue:      #003087;
+  --bg-dark:        #06060F;
+  --bg-card:        #0E0E1E;
+  --bg-card-hover:  #141428;
+  --text-primary:   #F0F4FF;
+  --text-muted:     #8A9BC2;
+  --border:         rgba(0, 71, 171, 0.35);
+  --accent:         #4A9EFF;
+  --nav-bg:         rgba(6, 6, 15, 0.88);
+  --hero-overlay:   0.35;
+  --font-base:      'Segoe UI', system-ui, -apple-system, sans-serif;
+  --radius:         10px;
+  --transition:     0.25s ease;
+  --nav-h:          80px;
+  --logo-filter:    none;          /* white logos visible on dark */
+  --logo-filter-maua: none;
+}
+
+/* ---- Light theme ---- */
+[data-theme="light"] {
+  --bg-dark:        #F0F4FF;
+  --bg-card:        #FFFFFF;
+  --bg-card-hover:  #E8EEF8;
+  --text-primary:   #0A0F2E;
+  --text-muted:     #4A5580;
+  --border:         rgba(0, 71, 171, 0.18);
+  --accent:         #0047AB;
+  --nav-bg:         rgba(240, 244, 255, 0.92);
+  --hero-overlay:   0.55;
+  --logo-filter:    invert(1) brightness(0) saturate(100%) invert(12%) sepia(80%) saturate(900%) hue-rotate(200deg); /* makes white logo dark blue */
+  --logo-filter-maua: invert(1) brightness(0) saturate(100%) invert(12%) sepia(80%) saturate(900%) hue-rotate(200deg);
 }
 
 html { scroll-behavior: smooth; }
@@ -35,11 +55,20 @@ body {
   color: var(--text-primary);
   min-height: 100vh;
   line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 a { color: inherit; text-decoration: none; }
 img, svg { display: block; max-width: 100%; }
 ul { list-style: none; }
+
+/* Smooth theme switching for all themed elements */
+.navbar, .bg-card, .pillar-card, .member-card, .project-card,
+.social-item, .contact-form input, .contact-form textarea,
+.portfolio-cta, .about-logos, .footer,
+.form-group input, .form-group textarea {
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
 
 /* ---------- Typography ---------- */
 h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; letter-spacing: -0.02em; }
@@ -56,16 +85,43 @@ p  { color: var(--text-muted); font-size: 1rem; }
   align-items: center;
   justify-content: space-between;
   padding: 0 5%;
-  background: rgba(6, 6, 15, 0.85);
+  background: var(--nav-bg);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
   z-index: 1000;
   gap: 1rem;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+/* Dual-logo wrapper in navbar */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  text-decoration: none;
+  flex-shrink: 0;
 }
 
 .nav-logo img {
-  height: 38px;
+  height: 48px;
   width: auto;
+  transition: filter var(--transition);
+  filter: var(--logo-filter);
+}
+
+/* Vertical divider between the two logos */
+.nav-logo-sep {
+  width: 1px;
+  height: 32px;
+  background: var(--border);
+  margin: 0 14px;
+  flex-shrink: 0;
+  transition: background 0.3s ease;
+}
+
+.nav-logo .nav-logo-maua {
+  height: 40px;
+  filter: var(--logo-filter-maua);
 }
 
 .nav-links {
@@ -99,6 +155,14 @@ p  { color: var(--text-muted); font-size: 1rem; }
 .nav-links a:hover::after,
 .nav-links a.active::after { width: 100%; }
 
+/* Language + Theme controls wrapper */
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
 /* Language Toggle */
 .lang-toggle {
   background: transparent;
@@ -118,6 +182,31 @@ p  { color: var(--text-muted); font-size: 1rem; }
   border-color: var(--accent);
   color: var(--accent);
   background: rgba(74, 158, 255, 0.08);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1;
+  transition: border-color var(--transition), color var(--transition), background var(--transition), transform var(--transition);
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(74, 158, 255, 0.08);
+  transform: rotate(20deg);
 }
 
 /* Nav Toggle (mobile hamburger) */
@@ -302,10 +391,13 @@ p  { color: var(--text-muted); font-size: 1rem; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--bg-card);
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .about-logos img {
   width: clamp(120px, 18vw, 200px);
+  filter: var(--logo-filter);
+  transition: filter var(--transition);
 }
 
 .about-pillars {
@@ -628,8 +720,8 @@ p  { color: var(--text-muted); font-size: 1rem; }
 .footer-partners img {
   height: 24px;
   opacity: 0.55;
-  filter: brightness(2);
-  transition: opacity var(--transition);
+  filter: var(--logo-filter);
+  transition: opacity var(--transition), filter var(--transition);
 }
 
 .footer-partners img:hover { opacity: 0.9; }
@@ -660,12 +752,15 @@ p  { color: var(--text-muted); font-size: 1rem; }
     position: fixed;
     top: var(--nav-h);
     left: 0; right: 0;
-    background: rgba(6, 6, 15, 0.97);
+    background: var(--nav-bg);
+    backdrop-filter: blur(12px);
     flex-direction: column;
     padding: 2rem 5%;
     gap: 1.5rem;
     border-bottom: 1px solid var(--border);
   }
+
+  .nav-logo-sep { display: none; }
 
   .nav-links.open { display: flex; }
   .nav-links a { font-size: 1.05rem; }
