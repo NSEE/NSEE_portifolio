@@ -26,6 +26,7 @@ const translations = {
     "about.p3":         "We maintain active partnerships with leading institutions including ESA, DLR, GMTO, FMABC, and international research universities — delivering consistent scientific and technological impact.",
     "about.pillars.tag":    "Research Areas",
     "about.pillars.title":  "What We Work On",
+    "about.cta":            "Work with us",
     "pillar1.title": "Space Technology",
     "pillar1.text":  "Space camera and spectrometer simulators for ESA missions (PLATO, EnVision), hardware virtualisation, and ground station infrastructure.",
     "pillar2.title": "AI & Data Science",
@@ -50,6 +51,12 @@ const translations = {
     "projects.tag":   "Our Work",
     "projects.title": "Projects & Cases",
     "projects.desc":  "Real-world technological initiatives across space engineering, artificial intelligence, astrophysics, and scientific instrumentation.",
+
+    "filter.all":   "All",
+    "filter.space": "Space",
+    "filter.ai":    "AI & Data Science",
+    "filter.astro": "Astrophysics",
+    "filter.gmt":   "GMT",
 
     "cat.space":  "Space Technologies",
     "cat.ai":     "Data Science & Artificial Intelligence",
@@ -158,6 +165,7 @@ const translations = {
     "about.p3":         "Mantemos parcerias ativas com instituições de referência como ESA, DLR, GMTO, FMABC e universidades de pesquisa internacionais — gerando impacto científico e tecnológico consistente.",
     "about.pillars.tag":    "Áreas de Pesquisa",
     "about.pillars.title":  "Em Que Trabalhamos",
+    "about.cta":            "Trabalhe conosco",
     "pillar1.title": "Tecnologias Espaciais",
     "pillar1.text":  "Simuladores de câmeras e espectrómetros para missões da ESA (PLATO, EnVision), virtualização de hardware e infraestrutura de estação terrena.",
     "pillar2.title": "IA & Ciência de Dados",
@@ -182,6 +190,12 @@ const translations = {
     "projects.tag":   "Nosso Trabalho",
     "projects.title": "Projetos & Cases",
     "projects.desc":  "Iniciativas tecnológicas reais nas áreas de engenharia espacial, inteligência artificial, astrofísica e instrumentação científica.",
+
+    "filter.all":   "Todos",
+    "filter.space": "Espaço",
+    "filter.ai":    "IA & Dados",
+    "filter.astro": "Astrofísica",
+    "filter.gmt":   "GMT",
 
     "cat.space":  "Tecnologias Espaciais",
     "cat.ai":     "Ciência de Dados e Inteligência Artificial",

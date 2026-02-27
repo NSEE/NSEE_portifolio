@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ffcfelps1.github.io/NSEE_portifolio/sitemap.xml

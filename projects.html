@@ -5,11 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects — NSEE</title>
   <meta name="description" content="NSEE projects: space simulators for ESA, AI applied to health, astrophysics research, and GMT software systems." />
+  <meta name="author" content="NSEE — Mauá Institute of Technology" />
+  <link rel="canonical" href="https://ffcfelps1.github.io/NSEE_portifolio/projects.html" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="NSEE Projects — Space, AI, Astrophysics &amp; GMT" />
+  <meta property="og:description" content="10 active research projects: SimuCam (ESA/PLATO), QEMULA, cancer prediction AI, ECG deep learning, GMT software, and more." />
+  <meta property="og:url"         content="https://ffcfelps1.github.io/NSEE_portifolio/projects.html" />
+  <meta property="og:image"       content="https://ffcfelps1.github.io/NSEE_portifolio/assets/nsee_azul.svg" />
+  <meta name="twitter:card"       content="summary_large_image" />
   <link rel="icon" type="image/svg+xml" href="assets/nsee_azul.svg" />
   <link rel="stylesheet" href="css/style.css" />
   <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('nsee-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'));</script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar">
@@ -41,7 +50,7 @@
   </nav>
 
   <!-- ===== CONTENT ===== -->
-  <div class="page-wrapper">
+  <div class="page-wrapper" id="main-content">
     <div class="section">
 
       <div class="section-header">
@@ -50,8 +59,17 @@
         <p data-i18n="projects.desc">Real-world technological initiatives across space engineering, artificial intelligence, astrophysics, and scientific instrumentation.</p>
       </div>
 
+      <!-- Filter Bar -->
+      <div class="filter-bar" role="group" aria-label="Filter projects by category">
+        <button class="filter-chip active" data-filter="all"  data-i18n="filter.all">All</button>
+        <button class="filter-chip" data-filter="space"       data-i18n="filter.space">Space</button>
+        <button class="filter-chip" data-filter="ai"          data-i18n="filter.ai">AI &amp; Data Science</button>
+        <button class="filter-chip" data-filter="astro"       data-i18n="filter.astro">Astrophysics</button>
+        <button class="filter-chip" data-filter="gmt"         data-i18n="filter.gmt">GMT</button>
+      </div>
+
       <!-- ===== CATEGORY 1: SPACE ===== -->
-      <div class="project-category">
+      <div class="project-category" data-category="space">
         <div class="category-header">
           <span class="category-icon">🛸</span>
           <h3 class="category-title" data-i18n="cat.space">Space Technologies</h3>
@@ -67,6 +85,7 @@
                 <span class="project-partners" data-i18n="sp1.partners">Partners: ESA, LESIA, DLR, IWF, INAF</span>
                 <span class="project-status" data-i18n="sp1.status">Status: In operation and continuous evolution</span>
               </div>
+              <div class="tag-group"><span class="tag">Python</span><span class="tag">C</span><span class="tag">SpaceWire</span><span class="tag">FPGA</span></div>
             </div>
           </div>
 
@@ -79,6 +98,7 @@
                 <span class="project-partners" data-i18n="sp2.partners">Partners: DLR, MPS, ESA</span>
                 <span class="project-status" data-i18n="sp2.status">Status: In advanced development</span>
               </div>
+              <div class="tag-group"><span class="tag">Python</span><span class="tag">RISC-V</span><span class="tag">SpaceWire</span><span class="tag">PUS</span></div>
             </div>
           </div>
 
@@ -91,6 +111,7 @@
                 <span class="project-partners" data-i18n="sp3.partners">Partners: DLR, ESA</span>
                 <span class="project-status" data-i18n="sp3.status">Status: Functional deliveries complete, consolidation phase</span>
               </div>
+              <div class="tag-group"><span class="tag">C</span><span class="tag">Python</span><span class="tag">SpaceWire</span><span class="tag">Qt</span></div>
             </div>
           </div>
 
@@ -102,6 +123,7 @@
               <div class="project-meta">
                 <span class="project-status" data-i18n="sp4.status">Status: Implementation phase</span>
               </div>
+              <div class="tag-group"><span class="tag">SatNOGS</span><span class="tag">SDR</span><span class="tag">Python</span><span class="tag">RF</span></div>
             </div>
           </div>
 
@@ -109,7 +131,7 @@
       </div>
 
       <!-- ===== CATEGORY 2: AI ===== -->
-      <div class="project-category">
+      <div class="project-category" data-category="ai">
         <div class="category-header">
           <span class="category-icon">🤖</span>
           <h3 class="category-title" data-i18n="cat.ai">Data Science &amp; Artificial Intelligence</h3>
@@ -124,6 +146,7 @@
               <div class="project-meta">
                 <span class="project-status" data-i18n="ai1.status">Status: Active</span>
               </div>
+              <div class="tag-group"><span class="tag">Python</span><span class="tag">ML</span><span class="tag">Survival Analysis</span><span class="tag">Statistics</span></div>
             </div>
           </div>
 
@@ -136,6 +159,7 @@
                 <span class="project-partners" data-i18n="ai2.partners">Partner: FMABC</span>
                 <span class="project-status" data-i18n="ai2.status">Status: Database consolidated, models in development</span>
               </div>
+              <div class="tag-group"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Data Science</span></div>
             </div>
           </div>
 
@@ -148,6 +172,7 @@
                 <span class="project-partners" data-i18n="ai3.partners">Partner: Beneficência Portuguesa de São Paulo</span>
                 <span class="project-status" data-i18n="ai3.status">Status: Active</span>
               </div>
+              <div class="tag-group"><span class="tag">Deep Learning</span><span class="tag">PyTorch</span><span class="tag">ECG</span></div>
             </div>
           </div>
 
@@ -160,6 +185,7 @@
                 <span class="project-partners" data-i18n="ai4.partners">Partners: ConeCta-SP, international research universities</span>
                 <span class="project-status" data-i18n="ai4.status">Status: In development and methodological consolidation</span>
               </div>
+              <div class="tag-group"><span class="tag">Python</span><span class="tag">Causal Graphs</span><span class="tag">PAGs</span><span class="tag">Statistics</span></div>
             </div>
           </div>
 
@@ -167,7 +193,7 @@
       </div>
 
       <!-- ===== CATEGORY 3: ASTROPHYSICS ===== -->
-      <div class="project-category">
+      <div class="project-category" data-category="astro">
         <div class="category-header">
           <span class="category-icon">🌌</span>
           <h3 class="category-title" data-i18n="cat.astro">Astrophysics &amp; Data Science</h3>
@@ -182,6 +208,7 @@
               <div class="project-meta">
                 <span class="project-status" data-i18n="as1.status">Status: Active</span>
               </div>
+              <div class="tag-group"><span class="tag">Python</span><span class="tag">James Webb</span><span class="tag">Image Processing</span><span class="tag">Astropy</span></div>
             </div>
           </div>
 
@@ -189,7 +216,7 @@
       </div>
 
       <!-- ===== CATEGORY 4: GMT ===== -->
-      <div class="project-category">
+      <div class="project-category" data-category="gmt">
         <div class="category-header">
           <span class="category-icon">🌠</span>
           <h3 class="category-title" data-i18n="cat.gmt">Giant Magellan Telescope (GMT)</h3>
@@ -205,6 +232,7 @@
                 <span class="project-partners" data-i18n="gm1.partners">Partner: GMTO</span>
                 <span class="project-status" data-i18n="gm1.status">Status: In continuous development</span>
               </div>
+              <div class="tag-group"><span class="tag">C++</span><span class="tag">Python</span><span class="tag">Qt</span><span class="tag">GUI</span></div>
             </div>
           </div>
 
@@ -217,6 +245,7 @@
                 <span class="project-partners" data-i18n="gm2.partners">Partner: GMTO</span>
                 <span class="project-status" data-i18n="gm2.status">Status: In development</span>
               </div>
+              <div class="tag-group"><span class="tag">Python</span><span class="tag">VTK</span><span class="tag">3D Viz</span><span class="tag">GMTO</span></div>
             </div>
           </div>
 

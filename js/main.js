@@ -63,11 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ---- Scroll-reveal animation ---- */
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const revealEls = document.querySelectorAll(
     '.pillar-card, .member-card, .project-card, .social-item, .about-grid, .about-logos'
   );
 
-  if ('IntersectionObserver' in window) {
+  if ('IntersectionObserver' in window && !reducedMotion) {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -99,15 +100,33 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---- Project card modal ---- */
   const modal      = document.getElementById('projectModal');
   const modalClose = document.getElementById('modalClose');
+  let lastFocusedCard = null;
 
   if (modal) {
     const closeModal = () => {
       modal.classList.remove('open');
       document.body.style.overflow = '';
+      if (lastFocusedCard) lastFocusedCard.focus();
     };
+
+    /* Focus trap inside modal */
+    modal.addEventListener('keydown', e => {
+      if (e.key !== 'Tab') return;
+      const focusable = modal.querySelectorAll(
+        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+      );
+      const first = focusable[0];
+      const last  = focusable[focusable.length - 1];
+      if (e.shiftKey) {
+        if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+      } else {
+        if (document.activeElement === last)  { e.preventDefault(); first.focus(); }
+      }
+    });
 
     document.querySelectorAll('.project-card').forEach(card => {
       card.addEventListener('click', () => {
+        lastFocusedCard = card;
         document.getElementById('modalIcon').textContent  =
           card.querySelector('.project-thumb')?.textContent ?? '';
         document.getElementById('modalTitle').textContent =
@@ -117,6 +136,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const meta = document.getElementById('modalMeta');
         meta.innerHTML = '';
+        card.querySelectorAll('.tag-group .tag').forEach(tag => {
+          const s = document.createElement('span');
+          s.textContent = tag.textContent;
+          meta.appendChild(s);
+        });
         card.querySelectorAll('.project-meta span').forEach(span => {
           const s = document.createElement('span');
           s.textContent = span.textContent;
@@ -125,12 +149,70 @@ document.addEventListener('DOMContentLoaded', () => {
 
         modal.classList.add('open');
         document.body.style.overflow = 'hidden';
+        if (modalClose) modalClose.focus();
       });
     });
 
     if (modalClose) modalClose.addEventListener('click', closeModal);
     modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+  }
+
+  /* ---- Project filter chips ---- */
+  const filterChips = document.querySelectorAll('.filter-chip');
+  if (filterChips.length) {
+    filterChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        const filter = chip.dataset.filter;
+        document.querySelectorAll('.project-category').forEach(cat => {
+          if (filter === 'all' || cat.dataset.category === filter) {
+            cat.classList.remove('hidden');
+          } else {
+            cat.classList.add('hidden');
+          }
+        });
+      });
+    });
+  }
+
+  /* ---- Contact form (Formspree AJAX) ---- */
+  const contactForm    = document.getElementById('contactForm');
+  const formFeedback   = document.getElementById('formFeedback');
+  if (contactForm && formFeedback) {
+    contactForm.addEventListener('submit', async e => {
+      e.preventDefault();
+      const action = contactForm.getAttribute('action');
+      if (action.includes('YOUR_FORM_ID')) {
+        formFeedback.textContent = 'Form not configured yet. Please email nsee@maua.br directly.';
+        formFeedback.className   = 'form-feedback error';
+        return;
+      }
+      const submitBtn = contactForm.querySelector('[type="submit"]');
+      submitBtn.disabled = true;
+      submitBtn.textContent = '...';
+      try {
+        const res = await fetch(action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          contactForm.reset();
+          formFeedback.textContent = 'Message sent! We\'ll get back to you soon.';
+          formFeedback.className   = 'form-feedback success';
+        } else {
+          throw new Error('Server error');
+        }
+      } catch {
+        formFeedback.textContent = 'Something went wrong. Please email nsee@maua.br directly.';
+        formFeedback.className   = 'form-feedback error';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send Message';
+      }
+    });
   }
 
 });
