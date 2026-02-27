@@ -48,7 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
     root.setAttribute('data-theme', theme);
     localStorage.setItem('nsee-theme', theme);
     if (themeToggle) {
-      themeToggle.textContent = theme === 'dark' ? '🌙' : '☀️';
       themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
     }
   }
@@ -95,6 +94,43 @@ document.addEventListener('DOMContentLoaded', () => {
         ? '0 4px 24px rgba(0,0,0,0.4)'
         : 'none';
     }, { passive: true });
+  }
+
+  /* ---- Project card modal ---- */
+  const modal      = document.getElementById('projectModal');
+  const modalClose = document.getElementById('modalClose');
+
+  if (modal) {
+    const closeModal = () => {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    };
+
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('click', () => {
+        document.getElementById('modalIcon').textContent  =
+          card.querySelector('.project-thumb')?.textContent ?? '';
+        document.getElementById('modalTitle').textContent =
+          card.querySelector('h3')?.textContent          ?? '';
+        document.getElementById('modalDesc').textContent  =
+          card.querySelector('p')?.textContent           ?? '';
+
+        const meta = document.getElementById('modalMeta');
+        meta.innerHTML = '';
+        card.querySelectorAll('.project-meta span').forEach(span => {
+          const s = document.createElement('span');
+          s.textContent = span.textContent;
+          meta.appendChild(s);
+        });
+
+        modal.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    if (modalClose) modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
   }
 
 });

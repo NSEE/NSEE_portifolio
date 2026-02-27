@@ -67,7 +67,7 @@ const translations = {
     "sp2.partners": "Partners: DLR, MPS, ESA",
     "sp2.status": "Status: In advanced development",
 
-    "sp3.title": "QEMULA",
+    "sp3.title": "QEMULA – Missão VERITAS/ENVISION",
     "sp3.desc":  "Hardware and software virtualisation platform for space instruments. Includes VenSpec-M spectrometer virtualisation, SpaceWire protocol simulation, GUI development, and error injection systems.",
     "sp3.partners": "Partners: DLR, ESA",
     "sp3.status": "Status: Functional deliveries complete, consolidation phase",
@@ -199,7 +199,7 @@ const translations = {
     "sp2.partners": "Parcerias: DLR, MPS, ESA",
     "sp2.status": "Status: Em desenvolvimento avançado",
 
-    "sp3.title": "QEMULA",
+    "sp3.title": "QEMULA – Missão VERITAS/ENVISION",
     "sp3.desc":  "Plataforma de virtualização de hardware e software embarcado para instrumentos espaciais. Inclui virtualização do espectrômetro VenSpec-M, simulação do protocolo SpaceWire, desenvolvimento de GUI e sistema de injeção de erros.",
     "sp3.partners": "Parcerias: DLR, ESA",
     "sp3.status": "Status: Entregas funcionais realizadas, em fase de consolidação",
