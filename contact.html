@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — NSEE</title>
+  <meta name="description" content="Get in touch with NSEE — partnerships, questions, and membership inquiries." />
+  <link rel="icon" type="image/svg+xml" href="assets/nsee_azul.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/nsee_branco.svg" alt="NSEE Logo" />
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"    data-i18n="nav.home">Home</a></li>
+      <li><a href="about.html"   data-i18n="nav.about">About</a></li>
+      <li><a href="team.html"    data-i18n="nav.team">Team</a></li>
+      <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">PT</button>
+  </nav>
+
+  <!-- ===== CONTENT ===== -->
+  <div class="page-wrapper">
+    <div class="section">
+
+      <div class="section-header">
+        <span class="section-tag" data-i18n="contact.tag">Get In Touch</span>
+        <h2 data-i18n="contact.title">Contact Us</h2>
+        <p data-i18n="contact.desc">Have a question, a partnership proposal, or want to join NSEE? We'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Social Links -->
+        <div class="contact-info">
+          <div class="social-list">
+
+            <a href="https://www.linkedin.com/company/nsee-maua" target="_blank" rel="noopener" class="social-item">
+              <span class="social-icon">💼</span>
+              <div>
+                <div class="social-label">LinkedIn</div>
+                <div class="social-handle">NSEE Mauá</div>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/nsee.maua" target="_blank" rel="noopener" class="social-item">
+              <span class="social-icon">📸</span>
+              <div>
+                <div class="social-label">Instagram</div>
+                <div class="social-handle">@nsee.maua</div>
+              </div>
+            </a>
+
+            <a href="mailto:nsee@maua.br" class="social-item">
+              <span class="social-icon">✉️</span>
+              <div>
+                <div class="social-label">E-mail</div>
+                <div class="social-handle">nsee@maua.br</div>
+              </div>
+            </a>
+
+            <a href="https://github.com/FFCfelps1/NSEE_portifolio" target="_blank" rel="noopener" class="social-item">
+              <span class="social-icon">🐙</span>
+              <div>
+                <div class="social-label">GitHub</div>
+                <div class="social-handle">FFCfelps1/NSEE_portifolio</div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" action="mailto:nsee@maua.br" method="GET" enctype="text/plain">
+
+          <div class="form-group">
+            <label for="name" data-i18n="contact.form.name">Your Name</label>
+            <input type="text" id="name" name="name" required
+              data-i18n-placeholder="contact.form.name" placeholder="Your Name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-i18n="contact.form.email">Your Email</label>
+            <input type="email" id="email" name="email" required
+              data-i18n-placeholder="contact.form.email" placeholder="Your Email" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject" data-i18n="contact.form.subject">Subject</label>
+            <input type="text" id="subject" name="subject"
+              data-i18n-placeholder="contact.form.subject" placeholder="Subject" />
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-i18n="contact.form.message">Message</label>
+            <textarea id="message" name="body" required
+              data-i18n-placeholder="contact.form.message" placeholder="Message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" data-i18n="contact.form.send">Send Message</button>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-partners">
+      <img src="assets/nsee_branco.svg" alt="NSEE" />
+      <img src="assets/maua_branco.svg" alt="Mauá" />
+    </div>
+    <p class="footer-text" data-i18n="footer.rights">© 2026 NSEE — Mauá Institute of Technology. All rights reserved.</p>
+    <p class="footer-text" data-i18n="footer.made">Made with ♥ by NSEE</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

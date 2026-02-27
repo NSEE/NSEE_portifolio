@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — NSEE</title>
+  <meta name="description" content="Explore NSEE's projects, cases, and our complete portfolio document." />
+  <link rel="icon" type="image/svg+xml" href="assets/nsee_azul.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/nsee_branco.svg" alt="NSEE Logo" />
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"    data-i18n="nav.home">Home</a></li>
+      <li><a href="about.html"   data-i18n="nav.about">About</a></li>
+      <li><a href="team.html"    data-i18n="nav.team">Team</a></li>
+      <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">PT</button>
+  </nav>
+
+  <!-- ===== CONTENT ===== -->
+  <div class="page-wrapper">
+    <div class="section">
+
+      <div class="section-header">
+        <span class="section-tag" data-i18n="projects.tag">Our Work</span>
+        <h2 data-i18n="projects.title">Projects &amp; Cases</h2>
+        <p data-i18n="projects.desc">A selection of initiatives developed by our team across entrepreneurship, simulation, and innovation.</p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-thumb">🏢</div>
+          <div class="project-body">
+            <span class="tag" data-i18n="proj1.tag">Simulation</span>
+            <h3 data-i18n="proj1.title">Business Simulation Program</h3>
+            <p data-i18n="proj1.desc">A semester-long program where students manage virtual companies, compete in simulated markets, and develop strategic thinking.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">🎤</div>
+          <div class="project-body">
+            <span class="tag" data-i18n="proj2.tag">Workshop</span>
+            <h3 data-i18n="proj2.title">Entrepreneurship Week</h3>
+            <p data-i18n="proj2.desc">Annual event featuring keynote speakers, workshops, pitch competitions, and networking sessions with industry leaders.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">🤝</div>
+          <div class="project-body">
+            <span class="tag" data-i18n="proj3.tag">Mentoring</span>
+            <h3 data-i18n="proj3.title">Startup Mentoring</h3>
+            <p data-i18n="proj3.desc">Connecting student entrepreneurs with experienced mentors from the startup and corporate worlds.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">⚡</div>
+          <div class="project-body">
+            <span class="tag" data-i18n="proj4.tag">Innovation</span>
+            <h3 data-i18n="proj4.title">Innovation Challenge</h3>
+            <p data-i18n="proj4.desc">A hackathon-style challenge where multidisciplinary teams tackle real business problems proposed by partner companies.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">🌟</div>
+          <div class="project-body">
+            <span class="tag" data-i18n="proj5.tag">Community</span>
+            <h3 data-i18n="proj5.title">Alumni Network</h3>
+            <p data-i18n="proj5.desc">Maintaining strong ties with former members who are now professionals, creating a powerful support and referral network.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">📋</div>
+          <div class="project-body">
+            <span class="tag" data-i18n="proj6.tag">Education</span>
+            <h3 data-i18n="proj6.title">Skill-Building Workshops</h3>
+            <p data-i18n="proj6.desc">Monthly workshops covering topics like financial modeling, marketing strategy, public speaking, and leadership.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Portfolio CTA -->
+      <div class="portfolio-cta">
+        <div class="pillar-icon">📄</div>
+        <h3 data-i18n="portfolio.title">Full Portfolio</h3>
+        <p data-i18n="portfolio.desc">Access our complete portfolio document with all projects, cases, and achievements.</p>
+        <div class="hero-ctas">
+          <a href="assets/Portifólio_NSEE.pdf" download class="btn btn-primary" data-i18n="portfolio.btn">Download Portfolio (PDF)</a>
+          <a href="assets/Portifólio_NSEE.pdf" target="_blank" rel="noopener" class="btn btn-outline" data-i18n="portfolio.view">View Portfolio Online</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-partners">
+      <img src="assets/nsee_branco.svg" alt="NSEE" />
+      <img src="assets/maua_branco.svg" alt="Mauá" />
+    </div>
+    <p class="footer-text" data-i18n="footer.rights">© 2026 NSEE — Mauá Institute of Technology. All rights reserved.</p>
+    <p class="footer-text" data-i18n="footer.made">Made with ♥ by NSEE</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

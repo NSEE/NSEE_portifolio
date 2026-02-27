@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NSEE — Mauá Institute of Technology</title>
+  <meta name="description" content="NSEE – Núcleo de Simulação de Empresas e Empreendedorismo at Mauá Institute of Technology." />
+  <link rel="icon" type="image/svg+xml" href="assets/nsee_azul.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/nsee_branco.svg" alt="NSEE Logo" />
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"    data-i18n="nav.home">Home</a></li>
+      <li><a href="about.html"   data-i18n="nav.about">About</a></li>
+      <li><a href="team.html"    data-i18n="nav.team">Team</a></li>
+      <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">PT</button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <main>
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content">
+        <img src="assets/nsee_branco.svg" alt="NSEE" class="hero-logo" />
+        <h1 data-i18n="hero.tagline">Empowering Entrepreneurs at Mauá Institute of Technology</h1>
+        <p data-i18n="hero.desc">We are a student organization dedicated to entrepreneurship, business simulation, and innovation.</p>
+        <div class="hero-ctas">
+          <a href="about.html" class="btn btn-primary" data-i18n="hero.cta1">Discover NSEE</a>
+          <a href="projects.html" class="btn btn-outline" data-i18n="hero.cta2">View Portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-partners">
+      <img src="assets/nsee_branco.svg" alt="NSEE" />
+      <img src="assets/maua_branco.svg" alt="Mauá" />
+    </div>
+    <p class="footer-text" data-i18n="footer.rights">© 2026 NSEE — Mauá Institute of Technology. All rights reserved.</p>
+    <p class="footer-text" data-i18n="footer.made">Made with ♥ by NSEE</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
