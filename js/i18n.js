@@ -17,6 +17,17 @@ const translations = {
     "hero.desc":     "We develop technological solutions with a focus on engineering rigour, technical precision, and direct application to real-world problems in industry, science, and the space sector.",
     "hero.cta1":     "Discover NSEE",
     "hero.cta2":     "View Portfolio",
+    "hero.scroll":   "Scroll",
+
+    /* ---- Stats ---- */
+    "stats.projects":   "Active Projects",
+    "stats.partners":   "Partner Institutions",
+    "stats.researchers":"Researchers",
+    "stats.areas":      "Research Areas",
+
+    /* ---- Partners ---- */
+    "partners.tag":   "Our Partners",
+    "partners.title": "Trusted by Leading Institutions",
 
     /* ---- About ---- */
     "about.tag":        "Who We Are",
@@ -35,6 +46,22 @@ const translations = {
     "pillar3.text":  "Black hole mass determination, James Webb data analysis, exoplanet detection, and galactic nucleus classification.",
     "pillar4.title": "Giant Magellan Telescope",
     "pillar4.text":  "Software and graphical interfaces for GMT subsystem monitoring, 3D visualisation of mirror data, and computational support tools for GMTO.",
+
+    /* ---- Timeline ---- */
+    "timeline.tag":   "Our History",
+    "timeline.title": "Key Milestones",
+    "tl1.year": "2018", "tl1.title": "Foundation of NSEE",
+    "tl1.desc": "NSEE is established at the Mauá Institute of Technology, combining embedded systems expertise with applied research in space and science.",
+    "tl2.year": "2019", "tl2.title": "First ESA Partnership — SimuCam PLATO",
+    "tl2.desc": "Launch of the SimuCam programme in collaboration with ESA, LESIA, DLR, IWF, and INAF for the PLATO mission camera simulator.",
+    "tl3.year": "2020", "tl3.title": "Giant Magellan Telescope Collaboration",
+    "tl3.desc": "NSEE begins contributing software and scientific visualisation tools to GMTO, including 3D mirror data rendering.",
+    "tl4.year": "2021", "tl4.title": "AI in Health Research",
+    "tl4.desc": "Launch of the ConeCta-SP cancer survival prediction project and the ECG deep learning programme with Beneficência Portuguesa, involving 20+ researchers.",
+    "tl5.year": "2022", "tl5.title": "EnVision Mission & QEMULA",
+    "tl5.desc": "Expansion into the ESA EnVision (Venus) mission with DLR and MPS, developing RISC-V spectrometer simulators and the QEMULA hardware virtualisation platform.",
+    "tl6.year": "2024", "tl6.title": "Ground Station at IMT",
+    "tl6.desc": "Installation of a satellite ground station on campus, integrating with the global SatNOGS network for real-time satellite signal reception.",
 
     /* ---- Team ---- */
     "team.tag":   "People",
@@ -156,6 +183,17 @@ const translations = {
     "hero.desc":     "Desenvolvemos soluções tecnológicas com foco em rigor técnico e aplicação direta em problemas reais da indústria, da ciência e do setor espacial.",
     "hero.cta1":     "Conheça o NSEE",
     "hero.cta2":     "Ver Portfólio",
+    "hero.scroll":   "Rolar",
+
+    /* ---- Stats ---- */
+    "stats.projects":    "Projetos Ativos",
+    "stats.partners":    "Instituições Parceiras",
+    "stats.researchers": "Pesquisadores",
+    "stats.areas":       "Áreas de Pesquisa",
+
+    /* ---- Partners ---- */
+    "partners.tag":   "Nossos Parceiros",
+    "partners.title": "Parceiros de Referência Mundial",
 
     /* ---- About ---- */
     "about.tag":        "Quem Somos",
@@ -174,6 +212,22 @@ const translations = {
     "pillar3.text":  "Determinação de massas de buracos negros, análise de dados do James Webb, detecção de exoplanetas e classificação de núcleos galácticos.",
     "pillar4.title": "Giant Magellan Telescope",
     "pillar4.text":  "Software e interfaces gráficas para monitoramento de subsistemas do GMT, visualização volumétrica de dados do espelho e ferramentas de apoio computacional para o GMTO.",
+
+    /* ---- Timeline ---- */
+    "timeline.tag":   "Nossa História",
+    "timeline.title": "Marcos Importantes",
+    "tl1.year": "2018", "tl1.title": "Fundação do NSEE",
+    "tl1.desc": "O NSEE é criado no Instituto Mauá de Tecnologia, unindo expertise em sistemas embarcados com pesquisa aplicada às áreas espacial e científica.",
+    "tl2.year": "2019", "tl2.title": "Primeira Parceria com a ESA — SimuCam PLATO",
+    "tl2.desc": "Início do programa SimuCam em colaboração com ESA, LESIA, DLR, IWF e INAF para o simulador de câmera da missão PLATO.",
+    "tl3.year": "2020", "tl3.title": "Colaboração com o Giant Magellan Telescope",
+    "tl3.desc": "O NSEE passa a contribuir com software e ferramentas de visualização científica para o GMTO, incluindo renderização volumétrica de dados do espelho.",
+    "tl4.year": "2021", "tl4.title": "IA Aplicada à Saúde",
+    "tl4.desc": "Lançamento do projeto ConeCta-SP de predição de sobrevida em câncer e do programa de deep learning para ECGs com a Beneficência Portuguesa, com mais de 20 pesquisadores.",
+    "tl5.year": "2022", "tl5.title": "Missão EnVision & QEMULA",
+    "tl5.desc": "Expansão para a missão ESA EnVision (Vênus) com DLR e MPS, desenvolvendo simuladores de espectrómetros RISC-V e a plataforma de virtualização QEMULA.",
+    "tl6.year": "2024", "tl6.title": "Estação Terrena no IMT",
+    "tl6.desc": "Instalação de uma estação terrena de satélites no câmpus do IMT, integrada à rede global SatNOGS para recepção de sinais em tempo real.",
 
     /* ---- Team ---- */
     "team.tag":   "Pessoas",

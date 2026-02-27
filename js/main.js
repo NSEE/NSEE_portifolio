@@ -62,10 +62,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ---- Scroll-reveal animation ---- */
+  /* ---- Scroll-reveal animation (staggered) ---- */
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const revealEls = document.querySelectorAll(
-    '.pillar-card, .member-card, .project-card, .social-item, .about-grid, .about-logos'
+    '.pillar-card, .member-card, .project-card, .social-item, .about-grid, .about-logos, .timeline-item, .stat-item, .partner-badge'
   );
 
   if ('IntersectionObserver' in window && !reducedMotion) {
@@ -80,11 +80,48 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.1 });
 
     revealEls.forEach(el => {
-      el.style.opacity = '0';
+      /* Stagger by sibling index within the same grid/list parent */
+      const siblings = el.parentElement
+        ? Array.from(el.parentElement.children).filter(c => c.classList.contains(el.classList[0]))
+        : [];
+      const idx   = siblings.indexOf(el);
+      const delay = idx >= 0 ? `${idx * 0.09}s` : '0s';
+
+      el.style.opacity   = '0';
       el.style.transform = 'translateY(24px)';
-      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      el.style.transition = `opacity 0.55s ease ${delay}, transform 0.55s ease ${delay}`;
       observer.observe(el);
     });
+  }
+
+  /* ---- Animated counters (stats bar) ---- */
+  function animateCounter(el, target, suffix) {
+    const duration = 1400;
+    const startTime = performance.now();
+    function tick(now) {
+      const elapsed  = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased    = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(eased * target) + suffix;
+      if (progress < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
+  const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+  if (statNumbers.length && 'IntersectionObserver' in window) {
+    const counterObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el     = entry.target;
+          const target = parseInt(el.dataset.target, 10);
+          const suffix = el.dataset.suffix || '';
+          animateCounter(el, target, suffix);
+          counterObs.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    statNumbers.forEach(el => counterObs.observe(el));
   }
 
   /* ---- Navbar shadow on scroll ---- */
@@ -95,6 +132,26 @@ document.addEventListener('DOMContentLoaded', () => {
         ? '0 4px 24px rgba(0,0,0,0.4)'
         : 'none';
     }, { passive: true });
+  }
+
+  /* ---- Back-to-top button ---- */
+  const btt = document.createElement('button');
+  btt.className = 'back-to-top';
+  btt.setAttribute('aria-label', 'Back to top');
+  btt.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>`;
+  document.body.appendChild(btt);
+  btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  window.addEventListener('scroll', () => {
+    btt.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  /* ---- Scroll-down indicator ---- */
+  const scrollDownBtn = document.getElementById('scrollDownBtn');
+  if (scrollDownBtn) {
+    scrollDownBtn.addEventListener('click', () => {
+      const target = document.querySelector('.stats-bar') || document.querySelector('#main-content > *:nth-child(2)');
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
   }
 
   /* ---- Project card modal ---- */
@@ -127,8 +184,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.project-card').forEach(card => {
       card.addEventListener('click', () => {
         lastFocusedCard = card;
-        document.getElementById('modalIcon').textContent  =
-          card.querySelector('.project-thumb')?.textContent ?? '';
+        document.getElementById('modalIcon').innerHTML  =
+          card.querySelector('.project-thumb')?.innerHTML ?? '';
         document.getElementById('modalTitle').textContent =
           card.querySelector('h3')?.textContent          ?? '';
         document.getElementById('modalDesc').textContent  =
