@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/nsee_azul.svg" alt="NSEE Logo" height="80" />
+  <img src="assets/nsee_branco.svg" alt="NSEE Logo" height="80" />
   <br /><br />
 
   <a href="https://ffcfelps1.github.io/NSEE_portifolio/">
