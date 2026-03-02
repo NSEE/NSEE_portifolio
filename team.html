@@ -41,11 +41,11 @@
     </ul>
 
     <div class="nav-controls">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">PT</button>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
         <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
       </button>
-      <button class="lang-toggle" id="langToggle" aria-label="Switch language">PT</button>
     </div>
   </nav>
 
@@ -61,83 +61,240 @@
 
       <div class="team-grid">
 
-        <!-- Member 1 -->
+        <!-- Photo files expected in assets/team/ (e.g. felipe-fazio.jpg).
+             The onerror handler shows the emoji placeholder until photos are added. -->
+
+        <!-- Felipe Fazio -->
         <div class="member-card">
-          <div class="member-photo-placeholder">👤</div>
+          <img class="member-photo" src="assets/team/felipe-fazio.jpeg"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-photo-placeholder',textContent:'👤'}))"
+               alt="Felipe Fazio" />
           <div class="member-info">
-            <h3>Member Name</h3>
-            <span class="role" data-i18n="role.coordinator">Coordinator</span>
-            <p class="bio">Leads NSEE's research direction and institutional partnerships.</p>
+            <h3>Felipe Fazio</h3>
+            <span class="role" data-i18n="role.intern">Estagiário(a)</span>
+            <p class="bio">Estagiário na área aeroespacial.</p>
+            <div class="member-links">
+              <a href="https://lattes.cnpq.br/5294139846490866" class="member-link-btn" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.linkedin">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/felipefaziodacosta/" class="member-link-btn" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.lattes">Lattes</a>
+            </div>
           </div>
         </div>
 
-        <!-- Member 2 -->
+        <!-- Luiz Antoniassi -->
         <div class="member-card">
-          <div class="member-photo-placeholder">👤</div>
+          <img class="member-photo" src="assets/team/luiz-antoniassi.jpg"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-photo-placeholder',textContent:'👤'}))"
+               alt="Luiz Antoniassi" />
           <div class="member-info">
-            <h3>Member Name</h3>
-            <span class="role" data-i18n="role.embedded">Embedded Systems Engineer</span>
-            <p class="bio">Specialises in space instrument simulators and embedded software.</p>
+            <h3>Luiz Antoniassi</h3>
+            <span class="role" data-i18n="role.fellow">Pesquisador(a) Bolsista</span>
+            <p class="bio">Pesquisador bolsista na área aeroespacial.</p>
+            <div class="member-links">
+              <a href="#" class="member-link-btn" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.linkedin">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/luiz-henrique-antoniassi-santos-433911209/" class="member-link-btn disabled" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.lattes">Lattes</a>
+            </div>
           </div>
         </div>
 
-        <!-- Member 3 -->
+        <!-- João Morimoto -->
         <div class="member-card">
-          <div class="member-photo-placeholder">👤</div>
+          <img class="member-photo" src="assets/team/joao-morimoto.jpg"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-photo-placeholder',textContent:'👤'}))"
+               alt="João Morimoto" />
           <div class="member-info">
-            <h3>Member Name</h3>
-            <span class="role" data-i18n="role.embedded">Embedded Systems Engineer</span>
-            <p class="bio">Works on RISC-V architecture and SpaceWire protocol implementations.</p>
+            <h3>João Morimoto</h3>
+            <span class="role" data-i18n="role.fapesp-student">Bolsista FAPESP</span>
+            <p class="bio">Estudante e bolsista FAPESP na área de Ciência de Dados e Inteligência Artificial.</p>
+            <div class="member-links">
+              <a href="#" class="member-link-btn disabled" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.linkedin">LinkedIn</a>
+              <a href="#" class="member-link-btn disabled" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.lattes">Lattes</a>
+            </div>
           </div>
         </div>
 
-        <!-- Member 4 -->
+        <!-- Daniel Gueter -->
         <div class="member-card">
-          <div class="member-photo-placeholder">👤</div>
+          <img class="member-photo" src="assets/team/daniel-gueter.jpg"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-photo-placeholder',textContent:'👤'}))"
+               alt="Daniel Gueter" />
           <div class="member-info">
-            <h3>Member Name</h3>
-            <span class="role" data-i18n="role.data">Data Scientist</span>
-            <p class="bio">Applies machine learning to health and oncological data.</p>
+            <h3>Daniel Gueter</h3>
+            <span class="role" data-i18n="role.project-manager">Gerente de Projetos</span>
+            <p class="bio">Gerente de projetos e pesquisador na área de Ciência de Dados e Inteligência Artificial.</p>
+            <div class="member-links">
+              <a href="#" class="member-link-btn" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.linkedin">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/danieldallavecchiagueter/" class="member-link-btn disabled" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.lattes">Lattes</a>
+            </div>
           </div>
         </div>
 
-        <!-- Member 5 -->
+        <!-- Bruno Bestle Turrin -->
         <div class="member-card">
-          <div class="member-photo-placeholder">👤</div>
+          <img class="member-photo" src="assets/team/bruno-bestle-turrin.jpg"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-photo-placeholder',textContent:'👤'}))"
+               alt="Bruno Bestle Turrin" />
           <div class="member-info">
-            <h3>Member Name</h3>
-            <span class="role" data-i18n="role.data">Data Scientist</span>
-            <p class="bio">Develops deep learning models for ECG interpretation and anomaly detection.</p>
+            <h3>Bruno Bestle Turrin</h3>
+            <span class="role" data-i18n="role.project-manager">Gerente de Projetos</span>
+            <p class="bio">Gerente do projeto ABP voltado à Ciência de Dados e Inteligência Artificial.</p>
+            <div class="member-links">
+              <a href="#" class="member-link-btn" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.linkedin">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/bruno-bestle-turrin-3a413129/" class="member-link-btn disabled" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.lattes">Lattes</a>
+            </div>
           </div>
         </div>
 
-        <!-- Member 6 -->
+        <!-- Vanderlei Parro -->
         <div class="member-card">
-          <div class="member-photo-placeholder">👤</div>
+          <img class="member-photo" src="assets/team/vanderlei-parro.jpg"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-photo-placeholder',textContent:'👤'}))"
+               alt="Vanderlei Parro" />
           <div class="member-info">
-            <h3>Member Name</h3>
-            <span class="role" data-i18n="role.dev">Software Engineer</span>
-            <p class="bio">Builds graphical interfaces and visualisation tools for the Giant Magellan Telescope.</p>
+            <h3>Vanderlei Parro</h3>
+            <span class="role" data-i18n="role.member">Membro</span>
+            <p class="bio">Contribuidor ativo nos projetos de pesquisa e engenharia do NSEE.</p>
+            <div class="member-links">
+              <a href="#" class="member-link-btn" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.linkedin">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/vparro/" class="member-link-btn disabled" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.lattes">Lattes</a>
+            </div>
           </div>
         </div>
 
-        <!-- Member 7 -->
+        <!-- Ana Beatriz Schlink -->
         <div class="member-card">
-          <div class="member-photo-placeholder">👤</div>
+          <img class="member-photo" src="assets/team/ana-beatriz-schlink.jpg"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-photo-placeholder',textContent:'👤'}))"
+               alt="Ana Beatriz Schlink" />
           <div class="member-info">
-            <h3>Member Name</h3>
-            <span class="role" data-i18n="role.researcher">Researcher</span>
-            <p class="bio">Works on astrophysics data analysis including James Webb and exoplanet detection.</p>
+            <h3>Ana Beatriz Schlink</h3>
+            <span class="role" data-i18n="role.intern">Estagiário(a)</span>
+            <p class="bio">Estagiária no Giant Magellan Telescope (GMTO) e na área de Ciência de Dados e Inteligência Artificial.</p>
+            <div class="member-links">
+              <a href="https://lattes.cnpq.br/9181817138895289" class="member-link-btn" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.linkedin">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/ana-beatriz-schlink/" class="member-link-btn" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.lattes">Lattes</a>
+            </div>
           </div>
         </div>
 
-        <!-- Member 8 -->
+        <!-- Simone Aldrey Angelo -->
         <div class="member-card">
-          <div class="member-photo-placeholder">👤</div>
+          <img class="member-photo" src="assets/team/simone-aldrey-angelo.jpg"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-photo-placeholder',textContent:'👤'}))"
+               alt="Simone Aldrey Angelo" />
           <div class="member-info">
-            <h3>Member Name</h3>
-            <span class="role" data-i18n="role.member">Member</span>
-            <p class="bio">Active contributor to NSEE's research and engineering projects.</p>
+            <h3>Simone Aldrey Angelo</h3>
+            <span class="role" data-i18n="role.fapesp-researcher">Pesquisadora TT5-FAPESP</span>
+            <p class="bio">Pesquisadora e bolsista TT5-FAPESP na área de Ciência de Dados e Inteligência Artificial.</p>
+            <div class="member-links">
+              <a href="#" class="member-link-btn" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.linkedin">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/simoneangelo/" class="member-link-btn disabled" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.lattes">Lattes</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lucas Buk -->
+        <div class="member-card">
+          <img class="member-photo" src="assets/team/lucas-buk.jpg"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-photo-placeholder',textContent:'👤'}))"
+               alt="Lucas Buk" />
+          <div class="member-info">
+            <h3>Lucas Buk</h3>
+            <span class="role" data-i18n="role.project-leader">Líder de Projeto</span>
+            <p class="bio">Líder do projeto ConeCta-SP voltado para CDIA em oncologia.</p>
+            <div class="member-links">
+              <a href="#" class="member-link-btn" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.linkedin">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/lucasbukcardoso/" class="member-link-btn disabled" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.lattes">Lattes</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yasmin Bonilha -->
+        <div class="member-card">
+          <img class="member-photo" src="assets/team/yasmin-bonilha.jpg"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-photo-placeholder',textContent:'👤'}))"
+               alt="Yasmin Bonilha" />
+          <div class="member-info">
+            <h3>Yasmin Bonilha</h3>
+            <span class="role" data-i18n="role.intern">Estagiário(a)</span>
+            <p class="bio">Estagiária no projeto ConeCta-SP voltado para CDIA em oncologia.</p>
+            <div class="member-links">
+              <a href="#" class="member-link-btn" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.linkedin">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/yasminbonilha/" class="member-link-btn disabled" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.lattes">Lattes</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Diogo Slepetys -->
+        <div class="member-card">
+          <img class="member-photo" src="assets/team/diogo-slepetys.jpg"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-photo-placeholder',textContent:'👤'}))"
+               alt="Diogo Slepetys" />
+          <div class="member-info">
+            <h3>Diogo Slepetys</h3>
+            <span class="role" data-i18n="role.dev">Engenheiro(a) de Software</span>
+            <p class="bio">Engenheiro de software do laboratório NSEE.</p>
+            <div class="member-links">
+              <a href="#" class="member-link-btn" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.linkedin">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/diogo-slepetys-621715160/" class="member-link-btn disabled" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.lattes">Lattes</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rafaela Talatinian -->
+        <div class="member-card">
+          <img class="member-photo" src="assets/team/rafaela-talatinian.jpg"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-photo-placeholder',textContent:'👤'}))"
+               alt="Rafaela Talatinian" />
+          <div class="member-info">
+            <h3>Rafaela Talatinian</h3>
+            <span class="role" data-i18n="role.intern">Estagiário(a)</span>
+            <p class="bio">Estagiária no Giant Magellan Telescope (GMTO) na área estrutural.</p>
+            <div class="member-links">
+              <a href="#" class="member-link-btn" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.linkedin">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/rafaela-talatinian-2468502a3/" class="member-link-btn disabled" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.lattes">Lattes</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leonardo Bicudo -->
+        <div class="member-card">
+          <img class="member-photo" src="assets/team/leonardo-bicudo.jpg"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'member-photo-placeholder',textContent:'👤'}))"
+               alt="Leonardo Bicudo" />
+          <div class="member-info">
+            <h3>Leonardo Bicudo</h3>
+            <span class="role" data-i18n="role.fapesp-student">Bolsista FAPESP</span>
+            <p class="bio">Estudante e bolsista FAPESP na área de Ciência de Dados e Inteligência Artificial.</p>
+            <div class="member-links">
+              <a href="#" class="member-link-btn disabled" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.linkedin">LinkedIn</a>
+              <a href="#" class="member-link-btn disabled" aria-disabled="true"
+                 target="_blank" rel="noopener" data-i18n="member.lattes">Lattes</a>
+            </div>
           </div>
         </div>
 

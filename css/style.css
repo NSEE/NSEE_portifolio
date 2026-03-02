@@ -516,6 +516,42 @@ p  { color: var(--text-muted); font-size: 1rem; }
   color: var(--text-muted);
 }
 
+.member-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+  flex-wrap: wrap;
+}
+
+.member-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 0.35rem 0.85rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background var(--transition), color var(--transition);
+  white-space: nowrap;
+}
+
+.member-link-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+.member-link-btn.disabled {
+  opacity: 0.35;
+  pointer-events: none;
+  border-color: var(--text-muted);
+  color: var(--text-muted);
+  cursor: default;
+}
+
 /* ---------- Projects Page ---------- */
 .project-category {
   margin-bottom: 3.5rem;

@@ -13,7 +13,7 @@ const translations = {
     "nav.contact":  "Contact",
 
     /* ---- Index ---- */
-    "hero.tagline":  "Advancing Embedded Electronic Systems at Mauá Institute of Technology",
+    "hero.tagline":  "Laboratory of Embedded Electronic Systems at Mauá Institute of Technology",
     "hero.desc":     "We develop technological solutions with a focus on engineering rigour, technical precision, and direct application to real-world problems in industry, science, and the space sector.",
     "hero.cta1":     "Discover NSEE",
     "hero.cta2":     "View Portfolio",
@@ -59,7 +59,7 @@ const translations = {
     "tl4.year": "2021", "tl4.title": "AI in Health Research",
     "tl4.desc": "Launch of the ConeCta-SP cancer survival prediction project and the ECG deep learning programme with Beneficência Portuguesa, involving 20+ researchers.",
     "tl5.year": "2022", "tl5.title": "EnVision Mission & QEMULA",
-    "tl5.desc": "Expansion into the ESA EnVision (Venus) mission with DLR and MPS, developing RISC-V spectrometer simulators and the QEMULA hardware virtualisation platform.",
+    "tl5.desc": "Expansion into the ESA EnVision (Venus) mission with DLR, developing RISC-V spectrometer simulators and the QEMULA hardware virtualisation platform.",
     "tl6.year": "2024", "tl6.title": "Ground Station at IMT",
     "tl6.desc": "Installation of a satellite ground station on campus, integrating with the global SatNOGS network for real-time satellite signal reception.",
 
@@ -67,12 +67,20 @@ const translations = {
     "team.tag":   "People",
     "team.title": "Our Team",
     "team.desc":  "Researchers, engineers, and students working together on real-world technology challenges across space, AI, and astrophysics.",
-    "role.coordinator": "Coordinator",
-    "role.researcher":  "Researcher",
-    "role.dev":         "Software Engineer",
-    "role.data":        "Data Scientist",
-    "role.embedded":    "Embedded Systems Engineer",
-    "role.member":      "Member",
+    "role.coordinator":        "Coordinator",
+    "role.researcher":          "Researcher",
+    "role.dev":                 "Software Engineer",
+    "role.data":                "Data Scientist",
+    "role.embedded":            "Embedded Systems Engineer",
+    "role.member":              "Member",
+    "role.intern":              "Intern",
+    "role.fellow":              "Research Fellow",
+    "role.fapesp-student":      "FAPESP Scholar",
+    "role.project-manager":     "Project Manager",
+    "role.fapesp-researcher":   "FAPESP TT5 Researcher",
+    "role.project-leader":      "Project Leader",
+    "member.linkedin":          "LinkedIn",
+    "member.lattes":            "Lattes",
 
     /* ---- Projects ---- */
     "projects.tag":   "Our Work",
@@ -98,7 +106,7 @@ const translations = {
 
     "sp2.title": "SimuCam – EnVision Mission (ESA)",
     "sp2.desc":  "Spectrometer simulator for the EnVision mission studying the surface of Venus. Involves RISC-V multi-core architecture, IP Core PUS implementation, and fault injection mechanisms.",
-    "sp2.partners": "Partners: DLR, MPS, ESA",
+    "sp2.partners": "Partners: DLR, ABP, ESA",
     "sp2.status": "Status: In advanced development",
 
     "sp3.title": "QEMULA – Missão VERITAS/ENVISION",
@@ -225,7 +233,7 @@ const translations = {
     "tl4.year": "2021", "tl4.title": "IA Aplicada à Saúde",
     "tl4.desc": "Lançamento do projeto ConeCta-SP de predição de sobrevida em câncer e do programa de deep learning para ECGs com a Beneficência Portuguesa, com mais de 20 pesquisadores.",
     "tl5.year": "2022", "tl5.title": "Missão EnVision & QEMULA",
-    "tl5.desc": "Expansão para a missão ESA EnVision (Vênus) com DLR e MPS, desenvolvendo simuladores de espectrómetros RISC-V e a plataforma de virtualização QEMULA.",
+    "tl5.desc": "Expansão para a missão ESA EnVision (Vênus) com DLR, desenvolvendo simuladores de espectrómetros RISC-V e a plataforma de virtualização QEMULA.",
     "tl6.year": "2024", "tl6.title": "Estação Terrena no IMT",
     "tl6.desc": "Instalação de uma estação terrena de satélites no câmpus do IMT, integrada à rede global SatNOGS para recepção de sinais em tempo real.",
 
@@ -233,12 +241,20 @@ const translations = {
     "team.tag":   "Pessoas",
     "team.title": "Nossa Equipe",
     "team.desc":  "Pesquisadores, engenheiros e estudantes trabalhando juntos em desafios tecnológicos reais nas áreas espacial, de IA e astrofísica.",
-    "role.coordinator": "Coordenador(a)",
-    "role.researcher":  "Pesquisador(a)",
-    "role.dev":         "Engenheiro(a) de Software",
-    "role.data":        "Cientista de Dados",
-    "role.embedded":    "Engenheiro(a) de Sistemas Embarcados",
-    "role.member":      "Membro",
+    "role.coordinator":        "Coordenador(a)",
+    "role.researcher":          "Pesquisador(a)",
+    "role.dev":                 "Engenheiro(a) de Software",
+    "role.data":                "Cientista de Dados",
+    "role.embedded":            "Engenheiro(a) de Sistemas Embarcados",
+    "role.member":              "Membro",
+    "role.intern":              "Estagiário(a)",
+    "role.fellow":              "Pesquisador(a) Bolsista",
+    "role.fapesp-student":      "Bolsista FAPESP",
+    "role.project-manager":     "Gerente de Projetos",
+    "role.fapesp-researcher":   "Pesquisadora TT5-FAPESP",
+    "role.project-leader":      "Líder de Projeto",
+    "member.linkedin":          "LinkedIn",
+    "member.lattes":            "Lattes",
 
     /* ---- Projects ---- */
     "projects.tag":   "Nosso Trabalho",
@@ -264,7 +280,7 @@ const translations = {
 
     "sp2.title": "SimuCam – Missão EnVision (ESA)",
     "sp2.desc":  "Simulador de espectrómetros para a missão EnVision, voltada ao estudo da superfície de Vênus. Envolve arquitetura RISC-V multi-core, implementação de IP Core PUS e mecanismos de injeção de falhas.",
-    "sp2.partners": "Parcerias: DLR, MPS, ESA",
+    "sp2.partners": "Parcerias: DLR, ABP, ESA",
     "sp2.status": "Status: Em desenvolvimento avançado",
 
     "sp3.title": "QEMULA – Missão VERITAS/ENVISION",
