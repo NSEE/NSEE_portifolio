@@ -125,36 +125,108 @@
           <h2 data-i18n="timeline.title">Key Milestones</h2>
         </div>
 
+        <div class="tl-filter-bar" role="group" aria-label="Filter timeline by area">
+          <button class="tl-chip active" data-tl-filter="all"  data-i18n="tl.filter.all">All</button>
+          <button class="tl-chip"        data-tl-filter="space" data-i18n="tl.filter.space">Space</button>
+          <button class="tl-chip"        data-tl-filter="ai"    data-i18n="tl.filter.ai">AI &amp; Data Science</button>
+          <button class="tl-chip"        data-tl-filter="gmt"   data-i18n="tl.filter.gmt">GMT</button>
+        </div>
+
         <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-year" data-i18n="tl1.year">2018</div>
-            <h4 data-i18n="tl1.title">Foundation of NSEE</h4>
-            <p data-i18n="tl1.desc">NSEE is established at the Mauá Institute of Technology, combining embedded systems expertise with applied research in space and science.</p>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2003.year">2003</div>
+            <h4 data-i18n="tl2003.title">CoRoT Satellite Emulator &mdash; OBSPM</h4>
+            <p data-i18n="tl2003.desc">Vanderlei Parro joins OBSPM (Paris) as a CAPES post-doctoral visiting researcher to work on emulation for the CoRoT space satellite.</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-year" data-i18n="tl2.year">2019</div>
-            <h4 data-i18n="tl2.title">First ESA Partnership — SimuCam PLATO</h4>
-            <p data-i18n="tl2.desc">Launch of the SimuCam programme in collaboration with ESA, LESIA, DLR, IWF, and INAF for the PLATO space mission camera simulator.</p>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2006.year">2006</div>
+            <h4 data-i18n="tl2006.title">1st FAPESP Regular Grant &mdash; CoRoT</h4>
+            <p data-i18n="tl2006.desc">FAPESP Regular grant awarded for filtering ground-segment data for the CoRoT mission.</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-year" data-i18n="tl3.year">2020</div>
-            <h4 data-i18n="tl3.title">Giant Magellan Telescope Collaboration</h4>
-            <p data-i18n="tl3.desc">NSEE begins contributing software and scientific visualisation tools to the Giant Magellan Telescope Organisation (GMTO), including 3D mirror data rendering.</p>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2007.year">2007</div>
+            <h4 data-i18n="tl2007.title">French Cooperation &amp; Early SimuCam Prototype</h4>
+            <p data-i18n="tl2007.desc">Partnership with CNES (Toulouse) and one-month FAPESP research stay in France. An IMT student develops the first camera simulator &mdash; the prototype that would become SimuCam.</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-year" data-i18n="tl4.year">2021</div>
-            <h4 data-i18n="tl4.title">AI in Health Research</h4>
-            <p data-i18n="tl4.desc">Launch of the ConeCta-SP cancer survival prediction project and the ECG deep learning programme with Beneficência Portuguesa, involving 20+ researchers.</p>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2008.year">2008</div>
+            <h4 data-i18n="tl2008.title">CNRS Collaboration &amp; the PLATO Idea</h4>
+            <p data-i18n="tl2008.desc">CNRS funds a research visit to France to explore new cooperative projects after CoRoT. The idea of applying the simulator work to ESA's PLATO mission emerges here.</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-year" data-i18n="tl5.year">2022</div>
-            <h4 data-i18n="tl5.title">EnVision Mission &amp; QEMULA</h4>
-            <p data-i18n="tl5.desc">Expansion into the ESA EnVision (Venus) mission with DLR, developing RISC-V spectrometer simulators and the QEMULA hardware virtualisation platform.</p>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2009.year">2009</div>
+            <h4 data-i18n="tl2009.title">CubeSats (AEB) &amp; First PLATO Funding (CNPq)</h4>
+            <p data-i18n="tl2009.desc">AEB approves a CubeSat monitoring project (turtle tracking). Simultaneously, CNPq approves the first funding grant dedicated to the PLATO mission.</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-year" data-i18n="tl6.year">2024</div>
-            <h4 data-i18n="tl6.title">Ground Station at IMT</h4>
-            <p data-i18n="tl6.desc">Installation of a satellite ground station on campus, integrating with the global SatNOGS network for real-time satellite signal reception.</p>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2010.year">2010</div>
+            <h4 data-i18n="tl2010.title">PLATO&ndash;SimuCam Cooperation with OBSPM</h4>
+            <p data-i18n="tl2010.desc">French researchers visit IMT for a PLATO seminar, consolidating the bilateral collaboration that would drive SimuCam development.</p>
+          </div>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2011.year">2011</div>
+            <h4 data-i18n="tl2011.title">First Official SimuCam Delivery to France</h4>
+            <p data-i18n="tl2011.desc">IMT students and faculty present the first official SimuCam deliverable to OBSPM in France &mdash; a landmark milestone for the SpaceWire-based camera simulator.</p>
+          </div>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2013.year">2013</div>
+            <h4 data-i18n="tl2013.title">DLR &amp; ESA Join SimuCam; CITAR Project</h4>
+            <p data-i18n="tl2013.desc">DLR requests a customised SimuCam application, broadening the European partnership. Simultaneously, the CITAR project launches via FINEP with CTI, INPE, AEB, IFUSP, IEAv, and FEI.</p>
+          </div>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2015.year">2015</div>
+            <h4 data-i18n="tl2015.title">1st Brafitec-CAPES, Double Degree &amp; NIRPS Instrument</h4>
+            <p data-i18n="tl2015.desc">CAPES approves the 1st Brafitec project (SEAC) led by Mauá with École des Mines de Saint-Étienne, including industry involvement and a full double-degree programme. NSEE is also invited to collaborate on the NIRPS instrument for ESO's VLT telescopes.</p>
+          </div>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2016.year">2016</div>
+            <h4 data-i18n="tl2016.title">ELT &mdash; HIRES Instrument (ESO / Florence)</h4>
+            <p data-i18n="tl2016.desc">In cooperation with the University of Florence, NSEE participates in the Phase-B defence of the HIRES (now ANDES) instrument for ESO's Extremely Large Telescope. The contribution is recognised as instrumental to the instrument's approval.</p>
+          </div>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2017.year">2017</div>
+            <h4 data-i18n="tl2017.title">First International Course for EMSE Students</h4>
+            <p data-i18n="tl2017.desc">First international course offered to École des Mines de Saint-Étienne students during Mauá's Technology Week, covering embedded control systems.</p>
+          </div>
+          <div class="timeline-item" data-tl-area="gmt">
+            <div class="timeline-year" data-i18n="tl2018.year">2018</div>
+            <h4 data-i18n="tl2018.title">Giant Magellan Telescope &mdash; First Collaboration</h4>
+            <p data-i18n="tl2018.desc">NSEE begins its first GMT project in cooperation with Carnegie Observatories (Pasadena, CA). A FAPESP and GMTO post-doctoral grant is awarded for the project.</p>
+          </div>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2019.year">2019</div>
+            <h4 data-i18n="tl2019.title">Carnegie Contract Concluded &amp; SimuCam&ndash;LESIA Integration</h4>
+            <p data-i18n="tl2019.desc">The Carnegie project concludes and a three-year GMT contract is initiated. In January, the first SimuCam integration session with the LESIA team takes place at IMT.</p>
+          </div>
+          <div class="timeline-item" data-tl-area="ai">
+            <div class="timeline-year" data-i18n="tl2020.year">2020</div>
+            <h4 data-i18n="tl2020.title">CDIA Area Created &mdash; Public Health</h4>
+            <p data-i18n="tl2020.desc">NSEE creates the Data Science &amp; Artificial Intelligence (CDIA) research area, initially focused on public health applications, including circadian risk analysis in partnership with Swansea University.</p>
+          </div>
+          <div class="timeline-item" data-tl-area="ai">
+            <div class="timeline-year" data-i18n="tl2021.year">2021</div>
+            <h4 data-i18n="tl2021.title">Harvard Partnership &mdash; AI in Health (USD 500k)</h4>
+            <p data-i18n="tl2021.desc">Following a USD 500,000 research funding agreement, NSEE begins collaborating with Harvard University. The ConeCta-SP cancer survival project and an ECG deep-learning programme with Beneficência Portuguesa involve 20+ researchers.</p>
+          </div>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2022.year">2022</div>
+            <h4 data-i18n="tl2022.title">Final SimuCam Delivery &mdash; Four Countries</h4>
+            <p data-i18n="tl2022.desc">Engineers Rodrigo França and Daniel Gueter complete the final SimuCam delivery, visiting all partner institutions across Italy (INAF), Germany (DLR), France (OBSPM), and Austria (IWF).</p>
+          </div>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2023.year">2023</div>
+            <h4 data-i18n="tl2023.title">NASA/JPL Invitation, 1st BSATA &amp; Nature Publication</h4>
+            <p data-i18n="tl2023.desc">NSEE is invited to participate in NASA's Veritas and EnVision missions through the DLR relationship. The first BSATA event gathers key partners. A colorectal cancer CDIA paper is published in Nature.</p>
+          </div>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2024.year">2024</div>
+            <h4 data-i18n="tl2024.title">EnVision Mission Formalised &amp; 2nd GMT Contract</h4>
+            <p data-i18n="tl2024.desc">NSEE officially joins ESA's EnVision mission (Venus) with DLR and Max Planck. Prof. Roberto Menezes joins the mission science team. A second GMT software contract worth USD 140,000 is signed.</p>
+          </div>
+          <div class="timeline-item" data-tl-area="space">
+            <div class="timeline-year" data-i18n="tl2025.year">2025</div>
+            <h4 data-i18n="tl2025.title">2nd Brafitec-CAPES &amp; CentraleSupélec Partnership</h4>
+            <p data-i18n="tl2025.desc">A second Brafitec project is approved in partnership with CentraleSupélec, benefitting 12 Mauá students and 36 Brazilians in total.</p>
           </div>
         </div>
       </div>

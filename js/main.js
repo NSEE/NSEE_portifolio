@@ -237,6 +237,25 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---- Contact form (Formspree AJAX) ---- */
   const contactForm    = document.getElementById('contactForm');
   const formFeedback   = document.getElementById('formFeedback');
+  /* ---- Timeline area filter ---- */
+  const tlChips = document.querySelectorAll('.tl-chip');
+  if (tlChips.length) {
+    tlChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        tlChips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        const filter = chip.dataset.tlFilter;
+        document.querySelectorAll('.timeline-item').forEach(item => {
+          if (filter === 'all' || item.dataset.tlArea === filter) {
+            item.removeAttribute('hidden');
+          } else {
+            item.setAttribute('hidden', '');
+          }
+        });
+      });
+    });
+  }
+
   if (contactForm && formFeedback) {
     contactForm.addEventListener('submit', async e => {
       e.preventDefault();

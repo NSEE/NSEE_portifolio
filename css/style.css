@@ -1193,6 +1193,35 @@ a:focus-visible {
   line-height: 1.65;
 }
 
+.tl-filter-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+
+.tl-chip {
+  background: transparent;
+  border: 1.5px solid var(--border);
+  color: var(--text-muted);
+  border-radius: 30px;
+  padding: 0.35rem 1.1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  letter-spacing: 0.03em;
+}
+
+.tl-chip:hover,
+.tl-chip.active {
+  background: var(--nsee-blue);
+  border-color: var(--nsee-blue);
+  color: #fff;
+}
+
+.timeline-item[hidden] { display: none !important; }
+
 /* ---------- Back-to-top ---------- */
 .back-to-top {
   position: fixed;
