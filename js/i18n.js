@@ -109,6 +109,7 @@ const translations = {
     "role.project-manager":     "Project Manager",
     "role.fapesp-researcher":   "FAPESP TT5 Researcher",
     "role.project-leader":      "Project Leader",
+    "role.structural-engineer": "Structural Engineer",
     "member.linkedin":          "LinkedIn",
     "member.lattes":            "Lattes",
 
@@ -313,6 +314,7 @@ const translations = {
     "role.project-manager":     "Gerente de Projetos",
     "role.fapesp-researcher":   "Pesquisadora TT5-FAPESP",
     "role.project-leader":      "Líder de Projeto",
+    "role.structural-engineer": "Engenheiro(a) de Estruturas",
     "member.linkedin":          "LinkedIn",
     "member.lattes":            "Lattes",
 
