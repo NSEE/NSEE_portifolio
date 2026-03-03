@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opportunities — NSEE</title>
+  <meta name="description" content="Open positions, scholarships, internships, and events at NSEE — Mauá Institute of Technology." />
+  <meta name="author" content="NSEE — Mauá Institute of Technology" />
+  <link rel="canonical" href="https://ffcfelps1.github.io/NSEE_portifolio/opportunities.html" />
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="NSEE Opportunities — Positions, Scholarships &amp; Events" />
+  <meta property="og:description" content="Open positions, scholarships, internships, and events at NSEE. Find your place in our multidisciplinary research group." />
+  <meta property="og:url"         content="https://ffcfelps1.github.io/NSEE_portifolio/opportunities.html" />
+  <meta property="og:image"       content="https://ffcfelps1.github.io/NSEE_portifolio/assets/nsee_azul.svg" />
+  <meta name="twitter:card"       content="summary_large_image" />
+  <link rel="icon" type="image/svg+xml" href="assets/nsee_azul.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>document.documentElement.setAttribute('data-theme',localStorage.getItem('nsee-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark'));</script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/nsee_branco.svg" alt="NSEE" />
+      <span class="nav-logo-sep" aria-hidden="true"></span>
+      <img src="assets/maua_branco.svg" alt="Mauá" class="nav-logo-maua" />
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html"          data-i18n="nav.home">Home</a></li>
+      <li><a href="about.html"          data-i18n="nav.about">About</a></li>
+      <li><a href="team.html"           data-i18n="nav.team">Team</a></li>
+      <li><a href="projects.html"       data-i18n="nav.projects">Projects</a></li>
+      <li><a href="news.html"           data-i18n="nav.news">News</a></li>
+      <li><a href="opportunities.html"  data-i18n="nav.opportunities">Opportunities</a></li>
+      <li><a href="contact.html"        data-i18n="nav.contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">PT</button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"/></svg>
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== CONTENT ===== -->
+  <div class="page-wrapper" id="main-content">
+    <div class="section">
+
+      <div class="section-header">
+        <span class="section-tag" data-i18n="opp.tag">Join Us</span>
+        <h2 data-i18n="opp.title">Opportunities</h2>
+        <p data-i18n="opp.desc">Open positions, scholarships, internships, and events at NSEE. Find your place in our multidisciplinary research group.</p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar" role="group" aria-label="Filter opportunities by type">
+        <button class="filter-chip active" data-opp-filter="all"         data-i18n="opp.filter.all">All</button>
+        <button class="filter-chip"        data-opp-filter="research"    data-i18n="opp.filter.research">Research</button>
+        <button class="filter-chip"        data-opp-filter="scholarship" data-i18n="opp.filter.scholarship">Scholarship</button>
+        <button class="filter-chip"        data-opp-filter="internship"  data-i18n="opp.filter.internship">Internship</button>
+        <button class="filter-chip"        data-opp-filter="event"       data-i18n="opp.filter.event">Event</button>
+      </div>
+
+      <!-- ===== OPPORTUNITIES GRID ===== -->
+      <div class="opp-grid">
+
+        <!-- Opportunity 1 — Research / IC -->
+        <article class="opp-card" data-opp-category="research">
+          <div class="opp-header">
+            <span class="tag" data-type="research" data-i18n="opp.type.research">Research</span>
+            <span class="opp-deadline" data-i18n="op1.deadline">Open</span>
+          </div>
+          <h3 data-i18n="op1.title">Undergraduate Research — AI Applied to Health (FAPESP)</h3>
+          <p data-i18n="op1.desc">We are seeking IC students to join the ConeCta-SP or ECG deep learning projects. Background in data science, Python, or statistics is welcome.</p>
+          <div class="opp-meta" data-i18n="op1.agency">Institution: NSEE / IMT · Funding: FAPESP</div>
+          <a href="contact.html" class="btn btn-outline" data-i18n="opp.apply">Apply / Learn more</a>
+        </article>
+
+        <!-- Opportunity 2 — Scholarship / TT4 -->
+        <article class="opp-card" data-opp-category="scholarship">
+          <div class="opp-header">
+            <span class="tag" data-type="scholarship" data-i18n="opp.type.scholarship">Scholarship</span>
+            <span class="opp-deadline" data-i18n="op2.deadline">Open</span>
+          </div>
+          <h3 data-i18n="op2.title">FAPESP TT4 Scholarship — Space Systems Software</h3>
+          <p data-i18n="op2.desc">Post-graduation scholarship (TT4-FAPESP) for development of embedded software and FPGA firmware for the EnVision mission simulator (SimuCam).</p>
+          <div class="opp-meta" data-i18n="op2.agency">Institution: NSEE / IMT · Funding: FAPESP</div>
+          <a href="contact.html" class="btn btn-outline" data-i18n="opp.apply">Apply / Learn more</a>
+        </article>
+
+        <!-- Opportunity 3 — Internship / GMT -->
+        <article class="opp-card" data-opp-category="internship">
+          <div class="opp-header">
+            <span class="tag" data-type="internship" data-i18n="opp.type.internship">Internship</span>
+            <span class="opp-deadline" data-i18n="op3.deadline">Open</span>
+          </div>
+          <h3 data-i18n="op3.title">Internship — Software Engineering (GMT)</h3>
+          <p data-i18n="op3.desc">Internship position for students in Computer Engineering, Computer Science, or related fields to contribute to the Giant Magellan Telescope visualisation software.</p>
+          <div class="opp-meta" data-i18n="op3.agency">Institution: NSEE / IMT</div>
+          <a href="contact.html" class="btn btn-outline" data-i18n="opp.apply">Apply / Learn more</a>
+        </article>
+
+        <!-- Opportunity 4 — Event / BSATA -->
+        <article class="opp-card" data-opp-category="event">
+          <div class="opp-header">
+            <span class="tag" data-type="event" data-i18n="opp.type.event">Event</span>
+            <span class="opp-deadline" data-i18n="op4.deadline">Date: Second half of 2026</span>
+          </div>
+          <h3 data-i18n="op4.title">BSATA 2026 — Brazilian Space &amp; Astronomical Technologies Assembly</h3>
+          <p data-i18n="op4.desc">Annual event gathering researchers, institutions, and partners for talks and workshops on space technology, astrophysics, and embedded systems.</p>
+          <div class="opp-meta" data-i18n="op4.agency">Institution: NSEE / IMT</div>
+          <a href="contact.html" class="btn btn-outline" data-i18n="opp.apply">Apply / Learn more</a>
+        </article>
+
+      </div><!-- /.opp-grid -->
+
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-partners">
+      <img src="assets/nsee_branco.svg" alt="NSEE" />
+      <img src="assets/maua_branco.svg" alt="Mauá" />
+    </div>
+    <p class="footer-text" data-i18n="footer.rights">© 2026 NSEE — Mauá Institute of Technology. All rights reserved.</p>
+    <p class="footer-text" data-i18n="footer.made">Made with ♥ by NSEE</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

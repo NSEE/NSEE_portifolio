@@ -66,6 +66,7 @@ ul { list-style: none; }
 
 /* Smooth theme switching for all themed elements */
 .navbar, .bg-card, .pillar-card, .member-card, .project-card,
+.news-card, .opp-card,
 .social-item, .contact-form input, .contact-form textarea,
 .portfolio-cta, .about-logos, .footer,
 .form-group input, .form-group textarea {
@@ -127,13 +128,23 @@ p  { color: var(--text-muted); font-size: 1rem; }
 }
 
 .nav-links {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
+  display: none;
+  position: fixed;
+  top: var(--nav-h);
+  left: 0; right: 0;
+  background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  flex-direction: column;
+  padding: 2rem 5%;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  z-index: 999;
 }
 
+.nav-links.open { display: flex; }
+
 .nav-links a {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--text-muted);
   letter-spacing: 0.04em;
@@ -217,9 +228,9 @@ p  { color: var(--text-muted); font-size: 1rem; }
   transform: rotate(20deg);
 }
 
-/* Nav Toggle (mobile hamburger) */
+/* Nav Toggle (hamburger — always visible) */
 .nav-toggle {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 26px;
@@ -228,6 +239,7 @@ p  { color: var(--text-muted); font-size: 1rem; }
   border: none;
   cursor: pointer;
   padding: 0;
+  order: -1;
 }
 
 .nav-toggle span {
@@ -1293,6 +1305,167 @@ a:focus-visible {
   .scroll-down { animation: none; }
 }
 
+/* ========================================
+   News Page
+   ======================================== */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.news-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.news-card:hover {
+  border-color: var(--nsee-blue-lt);
+  transform: translateY(-4px);
+}
+
+.news-thumb {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--nsee-blue) 0%, #0a1a40 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.25);
+  font-size: 3.5rem;
+}
+
+.news-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.news-body {
+  padding: 1.4rem 1.5rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.news-date {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.55rem;
+}
+
+.news-body h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.65rem;
+  line-height: 1.4;
+}
+
+.news-body p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 1.2rem;
+}
+
+.news-body .btn-outline {
+  align-self: flex-start;
+  font-size: 0.82rem;
+  padding: 0.45rem 1.1rem;
+}
+
+/* ========================================
+   Opportunities Page
+   ======================================== */
+.opp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.8rem;
+  margin-top: 2rem;
+}
+
+.opp-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1.6rem 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: border-color var(--transition), transform var(--transition);
+}
+
+.opp-card:hover {
+  border-color: var(--nsee-blue-lt);
+  transform: translateY(-4px);
+}
+
+.opp-card[hidden] { display: none; }
+
+.opp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+.opp-deadline {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.opp-card h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.4;
+}
+
+.opp-card p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.opp-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+  padding-top: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.opp-card .btn-outline {
+  align-self: flex-start;
+  font-size: 0.82rem;
+  padding: 0.45rem 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* Type-colour variants for .tag inside .opp-header */
+.opp-card .tag[data-type="scholarship"] { background: rgba(16,185,129,0.12); color: #10b981; }
+.opp-card .tag[data-type="internship"]  { background: rgba(245,158,11,0.12);  color: #f59e0b; }
+.opp-card .tag[data-type="event"]       { background: rgba(168,85,247,0.12);  color: #a855f7; }
+.opp-card .tag[data-type="research"]    { background: rgba(74,158,255,0.12);  color: var(--accent); }
+
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
   .about-grid,
@@ -1304,26 +1477,6 @@ a:focus-visible {
 }
 
 @media (max-width: 700px) {
-  .nav-toggle { display: flex; }
-
-  .nav-links {
-    display: none;
-    position: fixed;
-    top: var(--nav-h);
-    left: 0; right: 0;
-    background: var(--nav-bg);
-    backdrop-filter: blur(12px);
-    flex-direction: column;
-    padding: 2rem 5%;
-    gap: 1.5rem;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .nav-logo-sep { display: none; }
-
-  .nav-links.open { display: flex; }
-  .nav-links a { font-size: 1.05rem; }
-
   .hero-ctas { flex-direction: column; align-items: center; }
   .section { padding: 3.5rem 5%; }
 

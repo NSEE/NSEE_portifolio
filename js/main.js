@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---- Scroll-reveal animation (staggered) ---- */
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const revealEls = document.querySelectorAll(
-    '.pillar-card, .member-card, .project-card, .social-item, .about-grid, .about-logos, .timeline-item, .stat-item, .partner-badge'
+    '.pillar-card, .member-card, .project-card, .news-card, .opp-card, .social-item, .about-grid, .about-logos, .timeline-item, .stat-item, .partner-badge'
   );
 
   if ('IntersectionObserver' in window && !reducedMotion) {
@@ -228,13 +228,27 @@ document.addEventListener('DOMContentLoaded', () => {
         filterChips.forEach(c => c.classList.remove('active'));
         chip.classList.add('active');
         const filter = chip.dataset.filter;
-        document.querySelectorAll('.project-category').forEach(cat => {
-          if (filter === 'all' || cat.dataset.category === filter) {
-            cat.classList.remove('hidden');
-          } else {
-            cat.classList.add('hidden');
-          }
-        });
+        if (filter !== undefined) {
+          /* Projects page: toggle .project-category elements */
+          document.querySelectorAll('.project-category').forEach(cat => {
+            if (filter === 'all' || cat.dataset.category === filter) {
+              cat.classList.remove('hidden');
+            } else {
+              cat.classList.add('hidden');
+            }
+          });
+        }
+        const oppFilter = chip.dataset.oppFilter;
+        if (oppFilter !== undefined) {
+          /* Opportunities page: toggle .opp-card elements */
+          document.querySelectorAll('.opp-card').forEach(card => {
+            if (oppFilter === 'all' || card.dataset.oppCategory === oppFilter) {
+              card.removeAttribute('hidden');
+            } else {
+              card.setAttribute('hidden', '');
+            }
+          });
+        }
       });
     });
   }
