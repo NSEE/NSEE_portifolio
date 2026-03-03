@@ -188,8 +188,13 @@ document.addEventListener('DOMContentLoaded', () => {
           card.querySelector('.project-thumb')?.innerHTML ?? '';
         document.getElementById('modalTitle').textContent =
           card.querySelector('h3')?.textContent          ?? '';
-        document.getElementById('modalDesc').textContent  =
-          card.querySelector('p')?.textContent           ?? '';
+        const fullDescEl = card.querySelector('.project-full-desc');
+        const modalDescEl = document.getElementById('modalDesc');
+        if (fullDescEl) {
+          modalDescEl.innerHTML = fullDescEl.innerHTML;
+        } else {
+          modalDescEl.textContent = card.querySelector('p')?.textContent ?? '';
+        }
 
         const meta = document.getElementById('modalMeta');
         meta.innerHTML = '';

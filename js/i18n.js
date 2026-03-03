@@ -152,8 +152,9 @@ const translations = {
 
     /* AI */
     "ai1.title": "ConeCta-SP – Cancer Survival Prediction",
-    "ai1.desc":  "Application of machine learning models for survival analysis in oncological patients. Includes comparison of AI models vs. statistical methods, scenario creation, and curation of clinical databases. Over twenty researchers involved.",
-    "ai1.partners": "",
+    "ai1.desc":  "Partnership with FOSP, FSP-USP and AC Camargo Cancer Center applying AI to predict cancer patient survival in São Paulo. Funded by FAPESP.",
+    "ai1.fullDesc": "<p>Developed in partnership with the Fundação Oncocentro de São Paulo (FOSP), the School of Public Health of USP (FSP-USP), and AC Camargo Cancer Center, ConeCta-SP (<em>Cancer Control in the State of São Paulo: from knowledge to action</em>) applies research methods to cancer prevention and control. Funded by FAPESP, with collaboration from IARC/WHO.</p><p>NSEE participates in Axis 2 — <em>Artificial Intelligence in predicting cancer patient survival during and outside the COVID-19 pandemic</em> — integrating data from the Hospital Cancer Registry of São Paulo (RHC-SP).</p><p><strong>Sub-project objectives:</strong></p><ul><li>Evaluate the accuracy of different AI algorithms for predicting survival of patients diagnosed between 2000 and 2019, identifying the best-performing model for the five most frequent cancer types.</li><li>Compare the efficacy of AI models against standard statistical models for survival prediction.</li><li>Estimate expected survival for patients diagnosed in 2020/2021 to:<ul><li>Analyse the difference between actual and expected survival during the pandemic years;</li><li>Assess the effects of COVID-19 on cancer prognosis.</li></ul></li></ul>",
+    "ai1.partners": "Partners: FOSP · FSP-USP · IMT · AC Camargo · FAPESP · IARC/WHO",
     "ai1.status": "Status: Active",
 
     "ai2.title": "AI Applied to Assisted Human Reproduction",
@@ -357,8 +358,9 @@ const translations = {
 
     /* AI */
     "ai1.title": "ConeCta-SP – Predição de Sobrevida em Câncer",
-    "ai1.desc":  "Aplicação de modelos de aprendizado de máquina para análise de sobrevida de pacientes oncológicos. Comparação entre modelos de IA e métodos estatísticos, curadoria de bases de dados clínicas. Mais de vinte pesquisadores envolvidos.",
-    "ai1.partners": "",
+    "ai1.desc":  "Projeto em parceria com FOSP, FSP-USP e AC Camargo Cancer Center para aplicação de IA na predição de sobrevida de pacientes oncológicos em SP. Financiado pela FAPESP.",
+    "ai1.fullDesc": "<p>Desenvolvido em parceria com a Fundação Oncocentro de São Paulo (FOSP), a Faculdade de Saúde Pública da USP (FSP-USP) e o AC Camargo Cancer Center, o ConeCta-SP (<em>Controle do Câncer no Estado de São Paulo: do conhecimento à ação</em>) aplica métodos de pesquisa para prevenção e controle do câncer. Financiado pela FAPESP, com colaboração da IARC/OMS.</p><p>O NSEE participa do Eixo 2 — <em>Inteligência Artificial na predição de sobrevida de pacientes com câncer no período da epidemia da COVID-19 e anos não epidêmicos</em> — a partir da integração de dados do Registro Hospitalar de Câncer do Estado de São Paulo (RHC-SP).</p><p><strong>Finalidades do subprojeto:</strong></p><ul><li>Avaliar a precisão de diferentes algoritmos de IA na predição de sobrevida de pacientes diagnosticados entre 2000 e 2019, identificando o de melhor desempenho para os cinco tipos de câncer mais frequentes.</li><li>Comparar a eficácia dos modelos de IA com modelos estatísticos comuns para predição de sobrevida.</li><li>Estimar a sobrevida esperada de pacientes diagnosticados nos anos de 2020/2021 para:<ul><li>Analisar a diferença entre a sobrevida real e a esperada nos anos pandêmicos;</li><li>Verificar os efeitos da pandemia de COVID-19 no prognóstico do câncer.</li></ul></li></ul>",
+    "ai1.partners": "Parceiros: FOSP · FSP-USP · IMT · AC Camargo · FAPESP · IARC/OMS",
     "ai1.status": "Status: Ativo",
 
     "ai2.title": "IA Aplicada à Reprodução Humana Assistida",
@@ -432,6 +434,12 @@ function setLang(lang) {
     const key = el.getAttribute('data-i18n');
     const val = translations[lang][key];
     if (val !== undefined) el.textContent = val;
+  });
+
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const key = el.getAttribute('data-i18n-html');
+    const val = translations[lang][key];
+    if (val !== undefined) el.innerHTML = val;
   });
 
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
