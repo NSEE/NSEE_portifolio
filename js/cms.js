@@ -22,7 +22,7 @@
   /* ---- Load content.json ---- */
   async function loadContent() {
     try {
-      const resp = await fetch('data/content.json');
+      const resp = await fetch('data/content.json?_=' + Date.now(), { cache: 'no-store' });
       if (!resp.ok) return null;
       return await resp.json();
     } catch (e) {
