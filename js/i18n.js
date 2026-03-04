@@ -513,7 +513,24 @@ const translations = {
   }
 };
 
+/* Expose translations globally so admin.js and cms.js can access it */
+window.translations = translations;
+
 /* ---- Core i18n functions ---- */
+
+/**
+ * Merge override translations into the live translations object.
+ * Called by cms.js after loading data/content.json.
+ * @param {{ en?: Object, pt?: Object }} overrides
+ */
+function applyOverrides(overrides) {
+  if (!overrides) return;
+  ['en', 'pt'].forEach(function (lang) {
+    if (overrides[lang] && translations[lang]) {
+      Object.assign(translations[lang], overrides[lang]);
+    }
+  });
+}
 
 function getLang() {
   const stored = localStorage.getItem('nsee-lang');
@@ -552,14 +569,18 @@ function setLang(lang) {
   document.documentElement.lang = lang;
 }
 
+/* Expose on window so cms.js can monkey-patch it for dynamic re-render */
+window.setLang = setLang;
+
 function toggleLang() {
   const current = getLang();
-  setLang(current === 'en' ? 'pt' : 'en');
+  /* Use window.setLang so cms.js override (if loaded) runs on toggle */
+  window.setLang(current === 'en' ? 'pt' : 'en');
 }
 
 /* Auto-init on DOMContentLoaded */
 document.addEventListener('DOMContentLoaded', () => {
-  setLang(getLang());
+  window.setLang(getLang());
 
   const btn = document.getElementById('langToggle');
   if (btn) btn.addEventListener('click', toggleLang);

@@ -1,0 +1,307 @@
+{
+  "translations": {
+    "en": {},
+    "pt": {}
+  },
+  "team": [
+    {
+      "name": "Felipe Fazio",
+      "role": "role.intern",
+      "bio": "Estagiário na área aeroespacial.",
+      "photo": "assets/team/felipe-fazio.jpeg",
+      "lattes": "https://lattes.cnpq.br/5294139846490866",
+      "linkedin": "https://www.linkedin.com/in/felipefaziodacosta/"
+    },
+    {
+      "name": "Luiz Antoniassi",
+      "role": "role.fellow",
+      "bio": "Pesquisador bolsista na área aeroespacial.",
+      "photo": "assets/team/luiz-antoniassi.png",
+      "lattes": "https://lattes.cnpq.br/4933492888693981",
+      "linkedin": "https://www.linkedin.com/in/luiz-henrique-antoniassi-santos-433911209/"
+    },
+    {
+      "name": "João Morimoto",
+      "role": "role.fapesp-student",
+      "bio": "Estudante e bolsista FAPESP na área de Ciência de Dados e Inteligência Artificial.",
+      "photo": "assets/team/joao-morimoto.png",
+      "lattes": "https://lattes.cnpq.br/2630037558688885",
+      "linkedin": "https://www.linkedin.com/in/jo%C3%A3o-vitor-sesma-685ba6276/"
+    },
+    {
+      "name": "Daniel Gueter",
+      "role": "role.project-manager",
+      "bio": "Gerente de projetos e pesquisador na área de Ciência de Dados e Inteligência Artificial.",
+      "photo": "assets/team/daniel-gueter.png",
+      "lattes": "https://lattes.cnpq.br/1276922183951345",
+      "linkedin": "https://www.linkedin.com/in/danieldallavecchiagueter/"
+    },
+    {
+      "name": "Bruno Bestle Turrin",
+      "role": "role.project-manager",
+      "bio": "Gerente do projeto ABP voltado à Ciência de Dados e Inteligência Artificial.",
+      "photo": "assets/team/bruno-bestle-turrin.png",
+      "lattes": "https://lattes.cnpq.br/1438138464113809",
+      "linkedin": "https://www.linkedin.com/in/bruno-bestle-turrin-3a413129/"
+    },
+    {
+      "name": "Vanderlei Parro",
+      "role": "role.member",
+      "bio": "Contribuidor ativo nos projetos de pesquisa e engenharia do NSEE.",
+      "photo": "assets/team/vanderlei-parro.png",
+      "lattes": "https://lattes.cnpq.br/5302657052708622",
+      "linkedin": "https://www.linkedin.com/in/vparro/"
+    },
+    {
+      "name": "Ana Beatriz Schlink",
+      "role": "role.intern",
+      "bio": "Estagiária no Giant Magellan Telescope (GMTO) e na área de Ciência de Dados e Inteligência Artificial.",
+      "photo": "assets/team/ana-beatriz-schlink.png",
+      "lattes": "https://lattes.cnpq.br/9181817138895289",
+      "linkedin": "https://www.linkedin.com/in/ana-beatriz-schlink/"
+    },
+    {
+      "name": "Simone Aldrey Angelo",
+      "role": "role.fapesp-researcher",
+      "bio": "Pesquisadora e bolsista TT5-FAPESP na área de Ciência de Dados e Inteligência Artificial.",
+      "photo": "assets/team/simone-aldrey-angelo.png",
+      "lattes": "https://lattes.cnpq.br/4284294704799065",
+      "linkedin": "https://www.linkedin.com/in/simoneangelo/"
+    },
+    {
+      "name": "Lucas Buk",
+      "role": "role.project-leader",
+      "bio": "Líder do projeto ConeCta-SP voltado para CDIA em oncologia.",
+      "photo": "assets/team/lucas-buk.png",
+      "lattes": "https://lattes.cnpq.br/5417608945198427",
+      "linkedin": "https://www.linkedin.com/in/lucasbukcardoso/"
+    },
+    {
+      "name": "Yasmin Bonilha",
+      "role": "role.intern",
+      "bio": "Estagiária no projeto ConeCta-SP voltado para CDIA em oncologia.",
+      "photo": "assets/team/yasmin-bonilha.png",
+      "lattes": "",
+      "linkedin": "https://www.linkedin.com/in/yasminbonilha/"
+    },
+    {
+      "name": "Diogo Slepetys",
+      "role": "role.dev",
+      "bio": "Engenheiro de software do laboratório NSEE.",
+      "photo": "assets/team/diogo-slepetys.jpg",
+      "lattes": "",
+      "linkedin": "https://www.linkedin.com/in/diogo-slepetys-621715160/"
+    },
+    {
+      "name": "Rafaela Talatinian",
+      "role": "role.intern",
+      "bio": "Estagiária no Giant Magellan Telescope (GMTO) na área estrutural.",
+      "photo": "assets/team/rafaela-talatinian.jpg",
+      "lattes": "",
+      "linkedin": "https://www.linkedin.com/in/rafaela-talatinian-2468502a3/"
+    },
+    {
+      "name": "Leonardo Bicudo",
+      "role": "role.fapesp-student",
+      "bio": "Estudante e bolsista FAPESP na área de Ciência de Dados e Inteligência Artificial.",
+      "photo": "assets/team/leonardo-bicudo.jpg",
+      "lattes": "",
+      "linkedin": "https://www.linkedin.com/in/leonardo-formagio-bicudo-89239b389/"
+    },
+    {
+      "name": "Pedro H. C. de Lyra",
+      "role": "role.structural-engineer",
+      "bio": "Engenheiro de estruturas no Giant Magellan Telescope (GMTO).",
+      "photo": "assets/team/pedro-lyra.png",
+      "lattes": "https://lattes.cnpq.br/5854682856699850",
+      "linkedin": "https://www.linkedin.com/in/pedro-h-cerento-de-lyra-0b829b22/"
+    },
+    {
+      "name": "Thiago C. S. Moraes",
+      "role": "role.intern",
+      "bio": "Estagiário no Giant Magellan Telescope (GMTO) com aplicação de IA voltada ao telescópio.",
+      "photo": "assets/team/thiago-moraes.png",
+      "lattes": "https://lattes.cnpq.br/3348745369705989",
+      "linkedin": "https://www.linkedin.com/in/thiago-moraes-3102ab38b/"
+    },
+    {
+      "name": "Marco Furlan",
+      "role": "role.embedded",
+      "bio": "Pesquisador de sistemas embarcados voltado para a área aeroespacial.",
+      "photo": "assets/team/marco-furlan.png",
+      "lattes": "https://lattes.cnpq.br/5269353063539434",
+      "linkedin": "https://www.linkedin.com/in/marco-antonio-furlan-de-souza-360342/"
+    },
+    {
+      "name": "Thiago Amaral",
+      "role": "role.embedded",
+      "bio": "Pesquisador de sistemas embarcados voltado para a área aeroespacial.",
+      "photo": "assets/team/thiago-amaral.jpg",
+      "lattes": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Rafaela Zeron",
+      "role": "role.embedded",
+      "bio": "Pesquisadora de sistemas embarcados voltada para a área aeroespacial.",
+      "photo": "assets/team/rafaela-zeron.png",
+      "lattes": "https://lattes.cnpq.br/7284192170414806",
+      "linkedin": "https://www.linkedin.com/in/rafaella-cavalcante-zeron/"
+    },
+    {
+      "name": "Rodrigo França",
+      "role": "role.project-leader",
+      "bio": "Líder na área aeroespacial voltado a sistemas embarcados.",
+      "photo": "assets/team/rodrigo-franca.png",
+      "lattes": "https://lattes.cnpq.br/6605257026268834",
+      "linkedin": "https://www.linkedin.com/in/rodrigo-fran%C3%A7a-847872b1/"
+    },
+    {
+      "name": "Rodrigo Romano",
+      "role": "role.project-leader",
+      "bio": "Líder do projeto GMTO voltado à área de controle.",
+      "photo": "assets/team/rodrigo-romano.png",
+      "lattes": "https://lattes.cnpq.br/3843114488132776",
+      "linkedin": "https://www.linkedin.com/in/rodrigo-alvite-romano-b189b53a/"
+    }
+  ],
+  "news": [
+    {
+      "id": "n1",
+      "date": {
+        "en": "March 2026",
+        "pt": "Março de 2026"
+      },
+      "title": {
+        "en": "NSEE Officially Joins ESA's EnVision Mission",
+        "pt": "NSEE Oficializa Participação na Missão EnVision da ESA"
+      },
+      "desc": {
+        "en": "NSEE formalises its participation in ESA's EnVision mission to study the surface of Venus, in collaboration with DLR and Max Planck Institute.",
+        "pt": "O NSEE formaliza sua participação na missão EnVision da ESA para estudo da superfície de Vênus, em colaboração com o DLR e o Instituto Max Planck."
+      },
+      "link": "projects.html",
+      "icon": "globe"
+    },
+    {
+      "id": "n2",
+      "date": {
+        "en": "December 2023",
+        "pt": "Dezembro de 2023"
+      },
+      "title": {
+        "en": "Nature Publication: AI in Colorectal Cancer Prognosis",
+        "pt": "Publicação na Nature: IA no Prognóstico do Câncer Colorretal"
+      },
+      "desc": {
+        "en": "A paper from the ConeCta-SP project, co-authored by NSEE researchers, is published in the journal Nature, highlighting the use of machine learning in cancer survival prediction.",
+        "pt": "Artigo do projeto ConeCta-SP, com coautoria de pesquisadores do NSEE, é publicado na revista Nature, destacando o uso de machine learning na predição de sobrevida em câncer."
+      },
+      "link": "projects.html",
+      "icon": "document"
+    },
+    {
+      "id": "n3",
+      "date": {
+        "en": "September 2021",
+        "pt": "Setembro de 2021"
+      },
+      "title": {
+        "en": "Harvard Partnership — USD 500k Research Agreement",
+        "pt": "Parceria com Harvard — Acordo de Pesquisa de USD 500 mil"
+      },
+      "desc": {
+        "en": "NSEE begins a major collaboration with Harvard University focused on AI applied to health, involving more than 20 researchers across oncology and cardiology.",
+        "pt": "O NSEE inicia uma grande colaboração com a Universidade de Harvard voltada à IA aplicada à saúde, envolvendo mais de 20 pesquisadores nas áreas de oncologia e cardiologia."
+      },
+      "link": "projects.html",
+      "icon": "star"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "op1",
+      "category": "research",
+      "deadline": {
+        "en": "Open",
+        "pt": "Aberto"
+      },
+      "title": {
+        "en": "Undergraduate Research — AI Applied to Health (FAPESP)",
+        "pt": "Iniciação Científica — IA Aplicada à Saúde (FAPESP)"
+      },
+      "desc": {
+        "en": "We are seeking IC students to join the ConeCta-SP or ECG deep learning projects. Background in data science, Python, or statistics is welcome.",
+        "pt": "Buscamos alunos de IC para integrar os projetos ConeCta-SP ou deep learning em ECG. Interesse em ciência de dados, Python ou estatística é bem-vindo."
+      },
+      "agency": {
+        "en": "Institution: NSEE / IMT · Funding: FAPESP",
+        "pt": "Instituição: NSEE / IMT · Financiamento: FAPESP"
+      },
+      "link": "contact.html"
+    },
+    {
+      "id": "op2",
+      "category": "scholarship",
+      "deadline": {
+        "en": "Open",
+        "pt": "Aberto"
+      },
+      "title": {
+        "en": "FAPESP TT4 Scholarship — Space Systems Software",
+        "pt": "Bolsa FAPESP TT4 — Software de Sistemas Espaciais"
+      },
+      "desc": {
+        "en": "Post-graduation scholarship (TT4-FAPESP) for development of embedded software and FPGA firmware for the EnVision mission simulator (SimuCam).",
+        "pt": "Bolsa de pós-graduação (TT4-FAPESP) para desenvolvimento de software embarcado e firmware FPGA para o simulador da missão EnVision (SimuCam)."
+      },
+      "agency": {
+        "en": "Institution: NSEE / IMT · Funding: FAPESP",
+        "pt": "Instituição: NSEE / IMT · Financiamento: FAPESP"
+      },
+      "link": "contact.html"
+    },
+    {
+      "id": "op3",
+      "category": "internship",
+      "deadline": {
+        "en": "Open",
+        "pt": "Aberto"
+      },
+      "title": {
+        "en": "Internship — Software Engineering (GMT)",
+        "pt": "Estágio — Engenharia de Software (GMT)"
+      },
+      "desc": {
+        "en": "Internship position for students in Computer Engineering, Computer Science, or related fields to contribute to the Giant Magellan Telescope visualisation software.",
+        "pt": "Vaga de estágio para alunos de Engenharia da Computação, Ciência da Computação ou áreas correlatas para contribuir com o software de visualização do Giant Magellan Telescope."
+      },
+      "agency": {
+        "en": "Institution: NSEE / IMT",
+        "pt": "Instituição: NSEE / IMT"
+      },
+      "link": "contact.html"
+    },
+    {
+      "id": "op4",
+      "category": "event",
+      "deadline": {
+        "en": "Date: Second half of 2026",
+        "pt": "Data: Segundo semestre de 2026"
+      },
+      "title": {
+        "en": "BSATA 2026 — Brazilian Space & Astronomical Technologies Assembly",
+        "pt": "BSATA 2026 — Brazilian Space & Astronomical Technologies Assembly"
+      },
+      "desc": {
+        "en": "Annual event gathering researchers, institutions, and partners for talks and workshops on space technology, astrophysics, and embedded systems.",
+        "pt": "Evento anual que reúne pesquisadores, instituições e parceiros para palestras e workshops sobre tecnologia espacial, astrofísica e sistemas embarcados."
+      },
+      "agency": {
+        "en": "Institution: NSEE / IMT",
+        "pt": "Instituição: NSEE / IMT"
+      },
+      "link": "contact.html"
+    }
+  ]
+}

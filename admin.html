@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — NSEE</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/svg+xml" href="assets/nsee_azul.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script>
+    /* Prevent flash of wrong theme */
+    document.documentElement.setAttribute('data-theme',
+      localStorage.getItem('nsee-theme') ||
+      (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+    );
+  </script>
+</head>
+<body class="adm-body">
+
+  <div id="adminRoot">
+    <div class="adm-loading">Initialising…</div>
+  </div>
+
+  <!-- i18n.js is loaded so admin.js can read window.translations for the Texts tab -->
+  <script src="js/i18n.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
