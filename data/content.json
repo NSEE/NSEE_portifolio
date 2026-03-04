@@ -168,6 +168,8 @@
   "news": [
     {
       "id": "n1",
+      "icon": "globe",
+      "link": "projects.html",
       "date": {
         "en": "March 2026",
         "pt": "Março de 2026"
@@ -179,12 +181,12 @@
       "desc": {
         "en": "NSEE formalises its participation in ESA's EnVision mission to study the surface of Venus, in collaboration with DLR and Max Planck Institute.",
         "pt": "O NSEE formaliza sua participação na missão EnVision da ESA para estudo da superfície de Vênus, em colaboração com o DLR e o Instituto Max Planck."
-      },
-      "link": "projects.html",
-      "icon": "globe"
+      }
     },
     {
       "id": "n2",
+      "icon": "document",
+      "link": "projects.html",
       "date": {
         "en": "December 2023",
         "pt": "Dezembro de 2023"
@@ -196,12 +198,12 @@
       "desc": {
         "en": "A paper from the ConeCta-SP project, co-authored by NSEE researchers, is published in the journal Nature, highlighting the use of machine learning in cancer survival prediction.",
         "pt": "Artigo do projeto ConeCta-SP, com coautoria de pesquisadores do NSEE, é publicado na revista Nature, destacando o uso de machine learning na predição de sobrevida em câncer."
-      },
-      "link": "projects.html",
-      "icon": "document"
+      }
     },
     {
       "id": "n3",
+      "icon": "star",
+      "link": "projects.html",
       "date": {
         "en": "September 2021",
         "pt": "Setembro de 2021"
@@ -213,9 +215,24 @@
       "desc": {
         "en": "NSEE begins a major collaboration with Harvard University focused on AI applied to health, involving more than 20 researchers across oncology and cardiology.",
         "pt": "O NSEE inicia uma grande colaboração com a Universidade de Harvard voltada à IA aplicada à saúde, envolvendo mais de 20 pesquisadores nas áreas de oncologia e cardiologia."
-      },
+      }
+    },
+    {
+      "id": "n1772633833582",
+      "icon": "globe",
       "link": "projects.html",
-      "icon": "star"
+      "date": {
+        "en": "a",
+        "pt": "a"
+      },
+      "title": {
+        "en": "Test",
+        "pt": "Teste"
+      },
+      "desc": {
+        "en": "a",
+        "pt": "a"
+      }
     }
   ],
   "opportunities": [
