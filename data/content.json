@@ -222,6 +222,7 @@
     {
       "id": "op1",
       "category": "research",
+      "link": "contact.html",
       "deadline": {
         "en": "Open",
         "pt": "Aberto"
@@ -232,17 +233,17 @@
       },
       "desc": {
         "en": "We are seeking IC students to join the ConeCta-SP or ECG deep learning projects. Background in data science, Python, or statistics is welcome.",
-        "pt": "Buscamos alunos de IC para integrar os projetos ConeCta-SP ou deep learning em ECG. Interesse em ciência de dados, Python ou estatística é bem-vindo."
+        "pt": "Buscamos alunos de IC para integrar os projetos ConeCta-SP ou deep learning em ECG. Interesse em ciência de dados, Python ou estatística é bem-vindo. Teste do Nature Boy."
       },
       "agency": {
         "en": "Institution: NSEE / IMT · Funding: FAPESP",
         "pt": "Instituição: NSEE / IMT · Financiamento: FAPESP"
-      },
-      "link": "contact.html"
+      }
     },
     {
       "id": "op2",
       "category": "scholarship",
+      "link": "contact.html",
       "deadline": {
         "en": "Open",
         "pt": "Aberto"
@@ -258,12 +259,12 @@
       "agency": {
         "en": "Institution: NSEE / IMT · Funding: FAPESP",
         "pt": "Instituição: NSEE / IMT · Financiamento: FAPESP"
-      },
-      "link": "contact.html"
+      }
     },
     {
       "id": "op3",
       "category": "internship",
+      "link": "contact.html",
       "deadline": {
         "en": "Open",
         "pt": "Aberto"
@@ -279,12 +280,12 @@
       "agency": {
         "en": "Institution: NSEE / IMT",
         "pt": "Instituição: NSEE / IMT"
-      },
-      "link": "contact.html"
+      }
     },
     {
       "id": "op4",
       "category": "event",
+      "link": "contact.html",
       "deadline": {
         "en": "Date: Second half of 2026",
         "pt": "Data: Segundo semestre de 2026"
@@ -300,8 +301,7 @@
       "agency": {
         "en": "Institution: NSEE / IMT",
         "pt": "Instituição: NSEE / IMT"
-      },
-      "link": "contact.html"
+      }
     }
   ]
 }
