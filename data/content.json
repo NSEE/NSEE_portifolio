@@ -141,7 +141,7 @@
       "linkedin": ""
     },
     {
-      "name": "Rafaela Zeron",
+      "name": "Rafaella C. Zeron",
       "role": "role.embedded",
       "bio": "Pesquisadora de sistemas embarcados voltada para a área aeroespacial.",
       "photo": "assets/team/rafaela-zeron.png",
@@ -199,92 +199,13 @@
         "en": "A paper from the ConeCta-SP project, co-authored by NSEE researchers, is published in the journal Nature, highlighting the use of machine learning in cancer survival prediction.",
         "pt": "Artigo do projeto ConeCta-SP, com coautoria de pesquisadores do NSEE, é publicado na revista Nature, destacando o uso de machine learning na predição de sobrevida em câncer."
       }
-    },
-    {
-      "id": "n3",
-      "icon": "star",
-      "link": "projects.html",
-      "date": {
-        "en": "September 2021",
-        "pt": "Setembro de 2021"
-      },
-      "title": {
-        "en": "Harvard Partnership — USD 500k Research Agreement",
-        "pt": "Parceria com Harvard — Acordo de Pesquisa de USD 500 mil"
-      },
-      "desc": {
-        "en": "NSEE begins a major collaboration with Harvard University focused on AI applied to health, involving more than 20 researchers across oncology and cardiology.",
-        "pt": "O NSEE inicia uma grande colaboração com a Universidade de Harvard voltada à IA aplicada à saúde, envolvendo mais de 20 pesquisadores nas áreas de oncologia e cardiologia."
-      }
     }
   ],
   "opportunities": [
     {
-      "id": "op1",
-      "category": "research",
-      "deadline": {
-        "en": "Open",
-        "pt": "Aberto"
-      },
-      "title": {
-        "en": "Undergraduate Research — AI Applied to Health (FAPESP)",
-        "pt": "Iniciação Científica — IA Aplicada à Saúde (FAPESP)"
-      },
-      "desc": {
-        "en": "We are seeking IC students to join the ConeCta-SP or ECG deep learning projects. Background in data science, Python, or statistics is welcome.",
-        "pt": "Buscamos alunos de IC para integrar os projetos ConeCta-SP ou deep learning em ECG. Interesse em ciência de dados, Python ou estatística é bem-vindo."
-      },
-      "agency": {
-        "en": "Institution: NSEE / IMT · Funding: FAPESP",
-        "pt": "Instituição: NSEE / IMT · Financiamento: FAPESP"
-      },
-      "link": "contact.html"
-    },
-    {
-      "id": "op2",
-      "category": "scholarship",
-      "deadline": {
-        "en": "Open",
-        "pt": "Aberto"
-      },
-      "title": {
-        "en": "FAPESP TT4 Scholarship — Space Systems Software",
-        "pt": "Bolsa FAPESP TT4 — Software de Sistemas Espaciais"
-      },
-      "desc": {
-        "en": "Post-graduation scholarship (TT4-FAPESP) for development of embedded software and FPGA firmware for the EnVision mission simulator (SimuCam).",
-        "pt": "Bolsa de pós-graduação (TT4-FAPESP) para desenvolvimento de software embarcado e firmware FPGA para o simulador da missão EnVision (SimuCam)."
-      },
-      "agency": {
-        "en": "Institution: NSEE / IMT · Funding: FAPESP",
-        "pt": "Instituição: NSEE / IMT · Financiamento: FAPESP"
-      },
-      "link": "contact.html"
-    },
-    {
-      "id": "op3",
-      "category": "internship",
-      "deadline": {
-        "en": "Open",
-        "pt": "Aberto"
-      },
-      "title": {
-        "en": "Internship — Software Engineering (GMT)",
-        "pt": "Estágio — Engenharia de Software (GMT)"
-      },
-      "desc": {
-        "en": "Internship position for students in Computer Engineering, Computer Science, or related fields to contribute to the Giant Magellan Telescope visualisation software.",
-        "pt": "Vaga de estágio para alunos de Engenharia da Computação, Ciência da Computação ou áreas correlatas para contribuir com o software de visualização do Giant Magellan Telescope."
-      },
-      "agency": {
-        "en": "Institution: NSEE / IMT",
-        "pt": "Instituição: NSEE / IMT"
-      },
-      "link": "contact.html"
-    },
-    {
       "id": "op4",
       "category": "event",
+      "link": "contact.html",
       "deadline": {
         "en": "Date: Second half of 2026",
         "pt": "Data: Segundo semestre de 2026"
@@ -300,8 +221,7 @@
       "agency": {
         "en": "Institution: NSEE / IMT",
         "pt": "Instituição: NSEE / IMT"
-      },
-      "link": "contact.html"
+      }
     }
   ]
 }
